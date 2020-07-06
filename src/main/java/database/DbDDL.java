@@ -4,8 +4,12 @@ import enumItem.Table;
 
 import java.sql.Connection;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class DbDDL {
+
+    private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 
     private static String createSingerTable = "create table singers(\n" +
             "id INTEGER primary key AUTOINCREMENT,  \n" +
@@ -29,6 +33,7 @@ public class DbDDL {
                     statement.execute(createSingerTable);
                     break;
             }
+            System.out.println(df.format(new Date()) + " " +table.toString() + "创建成功");
         }
         catch (Exception e){
             e.printStackTrace();
@@ -44,6 +49,7 @@ public class DbDDL {
                     statement.execute(deleteSingerTable);
                     break;
             }
+            System.out.println(df.format(new Date()) + " " + table.toString() + "删除成功");
         }
         catch (Exception e){
             e.printStackTrace();
