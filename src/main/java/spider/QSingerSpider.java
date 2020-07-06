@@ -14,6 +14,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.Logger;
 
 import java.io.*;
 import java.net.URL;
@@ -27,9 +28,10 @@ public class QSingerSpider {
     private WebDriver driver;
     private WebDriverWait wait;
     private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+    private PrintStream exceptionHandler;
 
 
-    public QSingerSpider(Browser browser) {
+    public QSingerSpider(Browser browser) throws FileNotFoundException {
         switch (browser.ordinal()){
             case 0:
                 this.driver = new InternetExplorerDriver();
@@ -45,6 +47,11 @@ public class QSingerSpider {
                 break;
         }
         this.wait = new WebDriverWait(driver, 10);
+        this.exceptionHandler = new Logger("deverror.txt").getStream();
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
 
     public void spider(Area area, Letter letter){
@@ -105,12 +112,11 @@ public class QSingerSpider {
             }
 
 
-            System.out.println(df.format(new Date()) + " 当前爬取 " + area + " 首字母 " + letter);
+            System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 当前爬取 " + area.toString() + " 首字母 " + letter.toString());
 
-            System.out.println(df.format(new Date()) + " 当前爬取 " + area.number() + " 首字母 " + letter.ordinal());
 
             for (String s: list) {
-                System.out.println(df.format(new Date()) + " 爬取url:" + s);
+                System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 爬取url:" + s);
                 getSingers(s, area, letter);
             }
 
@@ -126,59 +132,117 @@ public class QSingerSpider {
         String singer;
         String photo;
         String new_url = " ";
+        List<WebElement> elements;
 
-        this.driver.get(url);
-        Thread.sleep(5000);
-        this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("singer_list_txt")));
+        try {
+            this.driver.get(url);
+            Thread.sleep(5000);
+            this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("singer_list_txt")));
+            elements = this.driver.findElements(By.className("singer_list_txt__item"));
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            this.exceptionHandler.println(
+                    df.format(new Date())+" " + Thread.currentThread().toString() + " url("+area.toString() +" "+ letter.toString() +")打开异常:" + url);
+            return;
+        }
 
 
-        List<WebElement> elements = this.driver.findElements(By.className("singer_list_txt__item"));
+
+
 
         Db db = new Db();
         Connection connection = db.openDatabase();
 
         for (int i=0; i<elements.size(); i++){
-            name = elements.get(i).getText();
-            System.out.println(df.format(new Date()) + " 歌手名:" +name);
-            singer = elements.get(i).findElement(By.tagName("a")).getAttribute("href");
-            System.out.println(df.format(new Date()) + " 歌手url:"+ singer);
+            //重置
+            try {
+                this.driver.get(url);
+                this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("singer_list_txt")));
+                elements = this.driver.findElements(By.className("singer_list_txt__item"));
+            }
+            catch (Exception e){
+                e.printStackTrace();
+                this.exceptionHandler.println(df.format(new Date())+" " + Thread.currentThread().toString() + " url("+area.toString() +" "+ letter.toString() +")打开异常:" + url + "(" + i);
+                continue;
+            }
 
-            this.driver.get(elements.get(i).findElement(By.tagName("a")).getAttribute("href"));
-            photo = this.driver.findElement(By.className("data__photo")).getAttribute("src");
-            System.out.println(df.format(new Date()) + " 歌手img_url:"+ photo);
+            try {
+                name = elements.get(i).getText();
+                System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 歌手名:" +name);
+            }
+            catch (Exception e){
+                e.printStackTrace();
+                this.exceptionHandler.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 歌手名获取失败"+area.toString() +" "+ letter.toString()+" "+i);
+                continue;
+            }
 
-            getPhoto(this.driver.findElement(By.className("data__photo")).getAttribute("src"), name+".png");
+            try {
+                singer = elements.get(i).findElement(By.tagName("a")).getAttribute("href");
+                System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 歌手url:"+ singer);
+            }
+            catch (Exception e){
+                e.printStackTrace();
+                this.exceptionHandler.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 歌手url获取失败"+area.toString() +" "+ letter.toString()+" "+name);
+                continue;
+            }
 
-            this.driver.get(url);
-            this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("singer_list_txt")));
-            elements = this.driver.findElements(By.className("singer_list_txt__item"));
+            try {
+                this.driver.get(elements.get(i).findElement(By.tagName("a")).getAttribute("href"));
+                photo = this.driver.findElement(By.className("data__photo")).getAttribute("src");
+                System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 歌手img_url:"+ photo);
 
-            DbDML.executeSqlScript(connection,
-                    "INSERT INTO singers(name,type,first_letter,photograph, url) VALUES (\"" +
-                            name + "\"," + area.number() + ",\"" +
-                            letter.toString() +
-                            "\",\"src/main/resources/singer_photo/"+ name+".png\",\""+
-                            singer + "\");");
-            System.out.println(df.format(new Date()) + " "+ name +"数据插入成功");
+                getPhoto(this.driver.findElement(By.className("data__photo")).getAttribute("src"), name+".png");
+            }
+            catch (Exception e){
+                e.printStackTrace();
+                this.exceptionHandler.println(df.format(new Date())+" " + Thread.currentThread().toString() + " 歌手照片获取失败"+area.toString() +" "+ letter.toString()+" "+name);
+                continue;
+            }
+
+            try {
+                DbDML.executeSqlScript(connection,
+                        "INSERT INTO singers(name,type,first_letter,photograph, url) VALUES (\"" +
+                                name + "\"," + area.number() + ",\"" +
+                                letter.toString() +
+                                "\",\"src/main/resources/singer_photo/"+ name+".png\",\""+
+                                singer + "\");");
+                System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " "+ name +"数据插入成功");
+            }
+            catch (Exception e){
+                e.printStackTrace();
+                this.exceptionHandler.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 数据插入失败"+area.toString() +" "+ letter.toString()+" "+name);
+                continue;
+            }
+
             Thread.sleep(1500);
         }
 
         db.closeDatabase(connection);
 
-        this.driver.get(url);
-        Thread.sleep(5000);
-        this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("singer_list_txt")));
+        try {
+            this.driver.get(url);
+            Thread.sleep(5000);
+            this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("singer_list_txt")));
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            this.exceptionHandler.println(
+                    df.format(new Date())+" " + Thread.currentThread().toString() + " url("+area.toString() +" "+ letter.toString() +")打开异常:" + url);
+            return;
+        }
+
 
         try {
             WebElement next_page = this.driver.findElement(By.className("next"));
             new_url = url.replaceFirst("page=" + (Integer.parseInt(next_page.getAttribute("data-index"))-1),
                     "page="+Integer.parseInt(next_page.getAttribute("data-index")));
-            System.out.println(df.format(new Date()) + " 当前爬取 " + area.number() + " 首字母 " + letter.ordinal());
-            System.out.println(df.format(new Date()) + " 爬取url:" + new_url);
+            System.out.println(df.format(new Date())+" " + Thread.currentThread().toString() + " 当前爬取 " + area.toString() + " 首字母 " + letter.toString());
+            System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 爬取url:" + new_url);
             getSingers(new_url, area, letter);
         }
         catch (Exception e){
-            System.out.println(df.format(new Date()) + " 当前已经是"+area.toString()+" " + letter.toString() + " 最后一页" );
+            System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 当前已经是"+area.toString()+" " + letter.toString() + " 最后一页" );
         }
     }
 
@@ -189,21 +253,25 @@ public class QSingerSpider {
             FileOutputStream fo = new FileOutputStream(new File("src/main/resources/singer_photo/"+fileName));//文件输出流
             byte[] buf = new byte[1024];
             int length = 0;
-            System.out.println(df.format(new Date()) + " 开始下载:" + url);
+            System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 开始下载:" + url);
             while ((length = in.read(buf, 0, buf.length)) != -1) {
                 fo.write(buf, 0, length);
             }
             //关闭流
             in.close();
             fo.close();
-            System.out.println(df.format(new Date()) + " " + fileName + "下载完成, 路径:" + "src/main/resources/singer_photo/"+fileName);
+            System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " " + fileName + "下载完成, 路径:" + "src/main/resources/singer_photo/"+fileName);
         }
         catch (IOException e){
             e.printStackTrace();
+            this.exceptionHandler.println(df.format(new Date())+" " + Thread.currentThread().toString() + " 文件下载异常: " + fileName);
         }
 
     }
 
+    public void quit(){
+        this.driver.quit();
+    }
 
 
 }

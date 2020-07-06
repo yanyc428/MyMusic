@@ -33,7 +33,7 @@ public class DbDDL {
                     statement.execute(createSingerTable);
                     break;
             }
-            System.out.println(df.format(new Date()) + " " +table.toString() + "创建成功");
+            System.out.println(df.format(new Date())+" " + Thread.currentThread().toString() + " " +table.toString() + "创建成功");
         }
         catch (Exception e){
             e.printStackTrace();
@@ -49,7 +49,7 @@ public class DbDDL {
                     statement.execute(deleteSingerTable);
                     break;
             }
-            System.out.println(df.format(new Date()) + " " + table.toString() + "删除成功");
+            System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " " + table.toString() + "删除成功");
         }
         catch (Exception e){
             e.printStackTrace();

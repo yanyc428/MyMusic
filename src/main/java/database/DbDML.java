@@ -14,7 +14,7 @@ public class DbDML {
         try {
             Statement statement = connection.createStatement();
             statement.execute(sqlScript);
-            System.out.println(df.format(new Date()) + " 一次sql语句执行成功");
+            System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 一次sql语句执行成功");
 
         }
         catch (Exception e){
