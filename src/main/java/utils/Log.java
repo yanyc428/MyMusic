@@ -4,8 +4,9 @@ import java.io.PrintStream;
 
 public class Log {
 
-    private static String fileName = "devlog.txt";
-    private static PrintStream exceptionHandler = new Logger("deverror.txt").getStream();;
+    public static String fileName = "devlog.txt";
+    public static String exception = "deverror.txt";
+    private static PrintStream exceptionHandler = new Logger(exception).getStream();;
 
     static {
         PrintStream out = new Logger(fileName).getStream();

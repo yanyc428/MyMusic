@@ -29,8 +29,8 @@ import java.awt.Font;
 
 public class Login {
 
-	private JPasswordField passwordField;
-	private JTextField textField;
+	private JPasswordField pwdField;
+	private JTextField usrNameField;
 	
 	private JPanel contentJPanel;
 	
@@ -63,171 +63,171 @@ public class Login {
 		
 		String dir = System.getProperty("user.dir") + "/resources/view/";
 
-		JPanel panel = new JPanel();
-		panel.setPreferredSize(new Dimension(200, 500));
-		panel.setMinimumSize(new Dimension(200, 500));
-		panel.setMaximumSize(new Dimension(200, 500));
-		panel.setBackground(new Color(245, 245, 245));
-		panel.setForeground(new Color(255, 255, 255));
-		contentJPanel.add(panel, BorderLayout.WEST);
-		panel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel leftBarMenuPanel = new JPanel();
+		leftBarMenuPanel.setPreferredSize(new Dimension(200, 500));
+		leftBarMenuPanel.setMinimumSize(new Dimension(200, 500));
+		leftBarMenuPanel.setMaximumSize(new Dimension(200, 500));
+		leftBarMenuPanel.setBackground(new Color(245, 245, 245));
+		leftBarMenuPanel.setForeground(new Color(255, 255, 255));
+		contentJPanel.add(leftBarMenuPanel, BorderLayout.WEST);
+		leftBarMenuPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setForeground(new Color(245, 245, 245));
-		panel_1.setBackground(new Color(245, 245, 245));
-		panel_1.setMaximumSize(new Dimension(200, 120));
-		panel_1.setMinimumSize(new Dimension(200, 120));
-		panel_1.setPreferredSize(new Dimension(200, 120));
-		panel.add(panel_1);
+		JPanel logoPanel = new JPanel();
+		logoPanel.setForeground(new Color(245, 245, 245));
+		logoPanel.setBackground(new Color(245, 245, 245));
+		logoPanel.setMaximumSize(new Dimension(200, 120));
+		logoPanel.setMinimumSize(new Dimension(200, 120));
+		logoPanel.setPreferredSize(new Dimension(200, 120));
+		leftBarMenuPanel.add(logoPanel);
 		
-		JLabel lable1 = new JLabel("");
-		lable1.setIcon(new ImageIcon(dir + "logo.png"));
-		panel_1.add(lable1);
+		JLabel logoLabel = new JLabel("");
+		logoLabel.setIcon(new ImageIcon(dir + "logo.png"));
+		logoPanel.add(logoLabel);
 		
-		JPanel panel_2 = new JPanel();
-		panel_2.setBackground(new Color(245, 245, 245));
-		panel_2.setMinimumSize(new Dimension(200, 160));
-		panel_2.setMaximumSize(new Dimension(200, 160));
-		panel_2.setPreferredSize(new Dimension(200, 160));
-		panel.add(panel_2);
-		panel_2.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel mymusicPanel = new JPanel();
+		mymusicPanel.setBackground(new Color(245, 245, 245));
+		mymusicPanel.setMinimumSize(new Dimension(200, 160));
+		mymusicPanel.setMaximumSize(new Dimension(200, 160));
+		mymusicPanel.setPreferredSize(new Dimension(200, 160));
+		leftBarMenuPanel.add(mymusicPanel);
+		mymusicPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label2 = new JLabel("我的音乐");
-		label2.setForeground(new Color(192, 192, 192));
-		label2.setMaximumSize(new Dimension(160, 30));
-		label2.setMinimumSize(new Dimension(160, 30));
-		label2.setPreferredSize(new Dimension(160, 30));
-		panel_2.add(label2);
+		JLabel mymusicLabel = new JLabel("我的音乐");
+		mymusicLabel.setForeground(new Color(192, 192, 192));
+		mymusicLabel.setMaximumSize(new Dimension(160, 30));
+		mymusicLabel.setMinimumSize(new Dimension(160, 30));
+		mymusicLabel.setPreferredSize(new Dimension(160, 30));
+		mymusicPanel.add(mymusicLabel);
 		
-		JButton btnNewButton = new JButton("我喜欢");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton mymusicLoveButton = new JButton("我喜欢");
+		mymusicLoveButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				mention.setText("请先登录");
 			}
 		});
-		btnNewButton.setBorderPainted(false);
-		btnNewButton.setBackground(new Color(245, 245, 245));
-		btnNewButton.setForeground(new Color(105, 105, 105));
-		btnNewButton.setHorizontalAlignment(SwingConstants.LEFT);
-		btnNewButton.setMaximumSize(new Dimension(160, 30));
-		btnNewButton.setMinimumSize(new Dimension(160, 30));
-		btnNewButton.setPreferredSize(new Dimension(160, 30));
-		btnNewButton.setIcon(new ImageIcon(dir + "love.png"));
-		panel_2.add(btnNewButton);
+		mymusicLoveButton.setBorderPainted(false);
+		mymusicLoveButton.setBackground(new Color(245, 245, 245));
+		mymusicLoveButton.setForeground(new Color(105, 105, 105));
+		mymusicLoveButton.setHorizontalAlignment(SwingConstants.LEFT);
+		mymusicLoveButton.setMaximumSize(new Dimension(160, 30));
+		mymusicLoveButton.setMinimumSize(new Dimension(160, 30));
+		mymusicLoveButton.setPreferredSize(new Dimension(160, 30));
+		mymusicLoveButton.setIcon(new ImageIcon(dir + "love.png"));
+		mymusicPanel.add(mymusicLoveButton);
 		
-		JButton btnNewButton_1 = new JButton("我的歌单");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		JButton mymusicListButton = new JButton("我的歌单");
+		mymusicListButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				mention.setText("请先登录");
 			}
 		});
-		btnNewButton_1.setForeground(new Color(105, 105, 105));
-		btnNewButton_1.setHorizontalAlignment(SwingConstants.LEFT);
-		btnNewButton_1.setBorderPainted(false);
-		btnNewButton_1.setPreferredSize(new Dimension(160, 30));
-		btnNewButton_1.setMinimumSize(new Dimension(160, 30));
-		btnNewButton_1.setMaximumSize(new Dimension(160, 30));
-		btnNewButton_1.setIcon(new ImageIcon(dir + "list.png"));
-		panel_2.add(btnNewButton_1);
+		mymusicListButton.setForeground(new Color(105, 105, 105));
+		mymusicListButton.setHorizontalAlignment(SwingConstants.LEFT);
+		mymusicListButton.setBorderPainted(false);
+		mymusicListButton.setPreferredSize(new Dimension(160, 30));
+		mymusicListButton.setMinimumSize(new Dimension(160, 30));
+		mymusicListButton.setMaximumSize(new Dimension(160, 30));
+		mymusicListButton.setIcon(new ImageIcon(dir + "list.png"));
+		mymusicPanel.add(mymusicListButton);
 		
-		JButton btnNewButton_2 = new JButton("检索历史");
-		btnNewButton_2.addActionListener(new ActionListener() {
+		JButton mymusicHistoryButton = new JButton("检索历史");
+		mymusicHistoryButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				mention.setText("请先登录");
 			}
 		});
-		btnNewButton_2.setForeground(new Color(105, 105, 105));
-		btnNewButton_2.setHorizontalAlignment(SwingConstants.LEFT);
-		btnNewButton_2.setBorderPainted(false);
-		btnNewButton_2.setMaximumSize(new Dimension(160, 30));
-		btnNewButton_2.setMinimumSize(new Dimension(160, 30));
-		btnNewButton_2.setPreferredSize(new Dimension(160, 30));
-		btnNewButton_2.setIcon(new ImageIcon(dir + "history.png"));
-		panel_2.add(btnNewButton_2);
+		mymusicHistoryButton.setForeground(new Color(105, 105, 105));
+		mymusicHistoryButton.setHorizontalAlignment(SwingConstants.LEFT);
+		mymusicHistoryButton.setBorderPainted(false);
+		mymusicHistoryButton.setMaximumSize(new Dimension(160, 30));
+		mymusicHistoryButton.setMinimumSize(new Dimension(160, 30));
+		mymusicHistoryButton.setPreferredSize(new Dimension(160, 30));
+		mymusicHistoryButton.setIcon(new ImageIcon(dir + "history.png"));
+		mymusicPanel.add(mymusicHistoryButton);
 		
-		JPanel panel_3 = new JPanel();
-		panel_3.setBackground(new Color(245, 245, 245));
-		panel_3.setForeground(new Color(245, 245, 245));
-		panel_3.setMaximumSize(new Dimension(200, 120));
-		panel_3.setMinimumSize(new Dimension(200, 120));
-		panel_3.setPreferredSize(new Dimension(200, 120));
-		panel.add(panel_3);
-		panel_3.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel onlinePanel = new JPanel();
+		onlinePanel.setBackground(new Color(245, 245, 245));
+		onlinePanel.setForeground(new Color(245, 245, 245));
+		onlinePanel.setMaximumSize(new Dimension(200, 120));
+		onlinePanel.setMinimumSize(new Dimension(200, 120));
+		onlinePanel.setPreferredSize(new Dimension(200, 120));
+		leftBarMenuPanel.add(onlinePanel);
+		onlinePanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label3 = new JLabel("在线音乐");
-		label3.setForeground(new Color(192, 192, 192));
-		label3.setBackground(new Color(192, 192, 192));
-		label3.setPreferredSize(new Dimension(160, 30));
-		label3.setMinimumSize(new Dimension(160, 30));
-		label3.setMaximumSize(new Dimension(160, 30));
-		panel_3.add(label3);
+		JLabel onlineLabel = new JLabel("在线音乐");
+		onlineLabel.setForeground(new Color(192, 192, 192));
+		onlineLabel.setBackground(new Color(192, 192, 192));
+		onlineLabel.setPreferredSize(new Dimension(160, 30));
+		onlineLabel.setMinimumSize(new Dimension(160, 30));
+		onlineLabel.setMaximumSize(new Dimension(160, 30));
+		onlinePanel.add(onlineLabel);
 		
-		JButton btnNewButton_3 = new JButton("歌手");
-		btnNewButton_3.setForeground(new Color(105, 105, 105));
-		btnNewButton_3.setHorizontalAlignment(SwingConstants.LEFT);
-		btnNewButton_3.setBorderPainted(false);
-		btnNewButton_3.setPreferredSize(new Dimension(160, 30));
-		btnNewButton_3.setMinimumSize(new Dimension(160, 30));
-		btnNewButton_3.setMaximumSize(new Dimension(160, 30));
-		btnNewButton_3.setIcon(new ImageIcon(dir + "singer.png"));
-		panel_3.add(btnNewButton_3);
+		JButton onlineSingerButton = new JButton("歌手");
+		onlineSingerButton.setForeground(new Color(105, 105, 105));
+		onlineSingerButton.setHorizontalAlignment(SwingConstants.LEFT);
+		onlineSingerButton.setBorderPainted(false);
+		onlineSingerButton.setPreferredSize(new Dimension(160, 30));
+		onlineSingerButton.setMinimumSize(new Dimension(160, 30));
+		onlineSingerButton.setMaximumSize(new Dimension(160, 30));
+		onlineSingerButton.setIcon(new ImageIcon(dir + "singer.png"));
+		onlinePanel.add(onlineSingerButton);
 		
-		JButton btnNewButton_2_1 = new JButton("歌曲");
-		btnNewButton_2_1.setHorizontalAlignment(SwingConstants.LEFT);
-		btnNewButton_2_1.setForeground(new Color(105, 105, 105));
-		btnNewButton_2_1.setBorderPainted(false);
-		btnNewButton_2_1.setPreferredSize(new Dimension(160, 30));
-		btnNewButton_2_1.setMinimumSize(new Dimension(160, 30));
-		btnNewButton_2_1.setMaximumSize(new Dimension(160, 30));
-		btnNewButton_2_1.setIcon(new ImageIcon(dir + "music.png"));
-		panel_3.add(btnNewButton_2_1);
+		JButton onlineSongButton = new JButton("歌曲");
+		onlineSongButton.setHorizontalAlignment(SwingConstants.LEFT);
+		onlineSongButton.setForeground(new Color(105, 105, 105));
+		onlineSongButton.setBorderPainted(false);
+		onlineSongButton.setPreferredSize(new Dimension(160, 30));
+		onlineSongButton.setMinimumSize(new Dimension(160, 30));
+		onlineSongButton.setMaximumSize(new Dimension(160, 30));
+		onlineSongButton.setIcon(new ImageIcon(dir + "music.png"));
+		onlinePanel.add(onlineSongButton);
 		
-		JPanel panel_4 = new JPanel();
-		panel_4.setForeground(new Color(245, 245, 245));
-		panel_4.setBackground(new Color(245, 245, 245));
-		panel_4.setMaximumSize(new Dimension(200, 120));
-		panel_4.setMinimumSize(new Dimension(200, 120));
-		panel_4.setPreferredSize(new Dimension(200, 120));
-		panel.add(panel_4);
-		panel_4.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel offlinePanel = new JPanel();
+		offlinePanel.setForeground(new Color(245, 245, 245));
+		offlinePanel.setBackground(new Color(245, 245, 245));
+		offlinePanel.setMaximumSize(new Dimension(200, 120));
+		offlinePanel.setMinimumSize(new Dimension(200, 120));
+		offlinePanel.setPreferredSize(new Dimension(200, 120));
+		leftBarMenuPanel.add(offlinePanel);
+		offlinePanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JLabel label4 = new JLabel("离线音乐");
-		label4.setForeground(new Color(192, 192, 192));
-		label4.setPreferredSize(new Dimension(160, 30));
-		label4.setMinimumSize(new Dimension(160, 30));
-		label4.setMaximumSize(new Dimension(160, 30));
-		panel_4.add(label4);
+		JLabel offlineLabel = new JLabel("离线音乐");
+		offlineLabel.setForeground(new Color(192, 192, 192));
+		offlineLabel.setPreferredSize(new Dimension(160, 30));
+		offlineLabel.setMinimumSize(new Dimension(160, 30));
+		offlineLabel.setMaximumSize(new Dimension(160, 30));
+		offlinePanel.add(offlineLabel);
 		
-		JButton btnNewButton_3_1 = new JButton("歌手");
-		btnNewButton_3_1.setHorizontalAlignment(SwingConstants.LEFT);
-		btnNewButton_3_1.setForeground(new Color(105, 105, 105));
-		btnNewButton_3_1.setPreferredSize(new Dimension(160, 30));
-		btnNewButton_3_1.setMinimumSize(new Dimension(160, 30));
-		btnNewButton_3_1.setMaximumSize(new Dimension(160, 30));
-		btnNewButton_3_1.setBorderPainted(false);
-		btnNewButton_3_1.setIcon(new ImageIcon(dir + "singer.png"));
-		panel_4.add(btnNewButton_3_1);
+		JButton offlineSingerButton = new JButton("歌手");
+		offlineSingerButton.setHorizontalAlignment(SwingConstants.LEFT);
+		offlineSingerButton.setForeground(new Color(105, 105, 105));
+		offlineSingerButton.setPreferredSize(new Dimension(160, 30));
+		offlineSingerButton.setMinimumSize(new Dimension(160, 30));
+		offlineSingerButton.setMaximumSize(new Dimension(160, 30));
+		offlineSingerButton.setBorderPainted(false);
+		offlineSingerButton.setIcon(new ImageIcon(dir + "singer.png"));
+		offlinePanel.add(offlineSingerButton);
 		
-		JButton btnNewButton_2_1_1 = new JButton("歌曲");
-		btnNewButton_2_1_1.setForeground(new Color(105, 105, 105));
-		btnNewButton_2_1_1.setHorizontalAlignment(SwingConstants.LEFT);
-		btnNewButton_2_1_1.setPreferredSize(new Dimension(160, 30));
-		btnNewButton_2_1_1.setMinimumSize(new Dimension(160, 30));
-		btnNewButton_2_1_1.setMaximumSize(new Dimension(160, 30));
-		btnNewButton_2_1_1.setBorderPainted(false);
-		btnNewButton_2_1_1.setIcon(new ImageIcon(dir + "music.png"));
-		panel_4.add(btnNewButton_2_1_1);
+		JButton offlineSongButton = new JButton("歌曲");
+		offlineSongButton.setForeground(new Color(105, 105, 105));
+		offlineSongButton.setHorizontalAlignment(SwingConstants.LEFT);
+		offlineSongButton.setPreferredSize(new Dimension(160, 30));
+		offlineSongButton.setMinimumSize(new Dimension(160, 30));
+		offlineSongButton.setMaximumSize(new Dimension(160, 30));
+		offlineSongButton.setBorderPainted(false);
+		offlineSongButton.setIcon(new ImageIcon(dir + "music.png"));
+		offlinePanel.add(offlineSongButton);
 		
-		JPanel panel_5 = new JPanel();
-		panel_5.setBackground(new Color(255, 255, 255));
-		contentJPanel.add(panel_5, BorderLayout.CENTER);
-		panel_5.setLayout(new BorderLayout(0, 0));
+		JPanel mainPanel = new JPanel();
+		mainPanel.setBackground(new Color(255, 255, 255));
+		contentJPanel.add(mainPanel, BorderLayout.CENTER);
+		mainPanel.setLayout(new BorderLayout(0, 0));
 		
-		JPanel panel_6 = new JPanel();
-		FlowLayout flowLayout = (FlowLayout) panel_6.getLayout();
-		flowLayout.setAlignment(FlowLayout.RIGHT);
-		panel_6.setBackground(new Color(255, 255, 255));
-		panel_5.add(panel_6, BorderLayout.NORTH);
+		JPanel mainHeadMenuBarPanel = new JPanel();
+		FlowLayout fl_mainHeadMenuBarPanel = (FlowLayout) mainHeadMenuBarPanel.getLayout();
+		fl_mainHeadMenuBarPanel.setAlignment(FlowLayout.RIGHT);
+		mainHeadMenuBarPanel.setBackground(new Color(255, 255, 255));
+		mainPanel.add(mainHeadMenuBarPanel, BorderLayout.NORTH);
 		
 		JButton btnNewButton_5 = new JButton("注册");
 		btnNewButton_5.addActionListener(new ActionListener() {
@@ -241,133 +241,135 @@ public class Login {
 		btnNewButton_5.setMaximumSize(new Dimension(120, 30));
 		btnNewButton_5.setForeground(new Color(105, 105, 105));
 		btnNewButton_5.setBorderPainted(false);
-		panel_6.add(btnNewButton_5);
+		mainHeadMenuBarPanel.add(btnNewButton_5);
 		
-		JPanel panel_7 = new JPanel();
-		panel_7.setMaximumSize(new Dimension(400, 700));
-		panel_7.setMinimumSize(new Dimension(400, 700));
-		panel_7.setPreferredSize(new Dimension(400, 700));
-		panel_7.setBackground(new Color(255, 255, 255));
-		panel_5.add(panel_7, BorderLayout.CENTER);
-		panel_7.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JPanel mainBodyPanel = new JPanel();
+		mainBodyPanel.setMaximumSize(new Dimension(400, 700));
+		mainBodyPanel.setMinimumSize(new Dimension(400, 700));
+		mainBodyPanel.setPreferredSize(new Dimension(400, 700));
+		mainBodyPanel.setBackground(new Color(255, 255, 255));
+		mainPanel.add(mainBodyPanel, BorderLayout.CENTER);
+		mainBodyPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JPanel panel_10 = new JPanel();
-		panel_10.setBackground(new Color(255, 255, 255));
-		panel_10.setPreferredSize(new Dimension(400, 400));
-		panel_10.setSize(new Dimension(400, 400));
-		panel_7.add(panel_10);
+		JPanel loginPanel = new JPanel();
+		loginPanel.setBackground(new Color(255, 255, 255));
+		loginPanel.setPreferredSize(new Dimension(400, 400));
+		loginPanel.setSize(new Dimension(400, 400));
+		mainBodyPanel.add(loginPanel);
 		
-		JPanel panel_11 = new JPanel();
-		panel_11.setBackground(new Color(255, 255, 255));
-		panel_11.setPreferredSize(new Dimension(400, 200));
-		panel_10.add(panel_11);
-		panel_11.setLayout(new GridLayout(0, 1, 0, 0));
+		JPanel loginMentionPanel = new JPanel();
+		loginMentionPanel.setBackground(new Color(255, 255, 255));
+		loginMentionPanel.setPreferredSize(new Dimension(400, 200));
+		loginPanel.add(loginMentionPanel);
+		loginMentionPanel.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		JLabel lblNewLabel_3 = new JLabel("登录以获取更多功能");
-		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_3.setHorizontalTextPosition(SwingConstants.CENTER);
-		lblNewLabel_3.setFont(new Font("Lucida Grande", Font.PLAIN, 30));
-		lblNewLabel_3.setForeground(new Color(105, 105, 105));
-		lblNewLabel_3.setBackground(Color.WHITE);
-		panel_11.add(lblNewLabel_3);
+		JLabel loginLabel = new JLabel("登录以获取更多功能");
+		loginLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		loginLabel.setHorizontalTextPosition(SwingConstants.CENTER);
+		loginLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 30));
+		loginLabel.setForeground(new Color(105, 105, 105));
+		loginLabel.setBackground(Color.WHITE);
+		loginMentionPanel.add(loginLabel);
 		
-		JPanel panel_8 = new JPanel();
-		panel_10.add(panel_8);
-		panel_8.setBackground(new Color(255, 255, 255));
-		panel_8.setMaximumSize(new Dimension(300, 90));
-		panel_8.setPreferredSize(new Dimension(350, 120));
-		panel_8.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
+		JPanel loginFunctionPanel = new JPanel();
+		loginPanel.add(loginFunctionPanel);
+		loginFunctionPanel.setBackground(new Color(255, 255, 255));
+		loginFunctionPanel.setMaximumSize(new Dimension(300, 90));
+		loginFunctionPanel.setPreferredSize(new Dimension(350, 120));
+		loginFunctionPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
 		
-		JLabel lblNewLabel = new JLabel("用户名");
-		lblNewLabel.setForeground(new Color(105, 105, 105));
-		lblNewLabel.setPreferredSize(new Dimension(50, 30));
-		lblNewLabel.setMinimumSize(new Dimension(50, 30));
-		lblNewLabel.setMaximumSize(new Dimension(50, 30));
-		lblNewLabel.setHorizontalAlignment(SwingConstants.RIGHT);
-		panel_8.add(lblNewLabel);
+		JLabel usrNameLabel = new JLabel("用户名");
+		usrNameLabel.setForeground(new Color(105, 105, 105));
+		usrNameLabel.setPreferredSize(new Dimension(50, 30));
+		usrNameLabel.setMinimumSize(new Dimension(50, 30));
+		usrNameLabel.setMaximumSize(new Dimension(50, 30));
+		usrNameLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+		loginFunctionPanel.add(usrNameLabel);
 		
-		textField = new JTextField();
-		textField.setBackground(new Color(245, 245, 245));
-		textField.setMaximumSize(new Dimension(250, 30));
-		textField.setMinimumSize(new Dimension(250, 30));
-		textField.setSize(new Dimension(250, 30));
-		textField.setLocation(new Point(50, 0));
-		textField.setPreferredSize(new Dimension(250, 30));
-		panel_8.add(textField);
-		textField.setColumns(20);
+		usrNameField = new JTextField();
+		usrNameField.setBackground(new Color(245, 245, 245));
+		usrNameField.setMaximumSize(new Dimension(250, 30));
+		usrNameField.setMinimumSize(new Dimension(250, 30));
+		usrNameField.setSize(new Dimension(250, 30));
+		usrNameField.setLocation(new Point(50, 0));
+		usrNameField.setPreferredSize(new Dimension(250, 30));
+		loginFunctionPanel.add(usrNameField);
+		usrNameField.setColumns(20);
 		
-		JLabel lblNewLabel_1 = new JLabel(" 密码");
-		lblNewLabel_1.setForeground(new Color(105, 105, 105));
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblNewLabel_1.setSize(new Dimension(50, 30));
-		lblNewLabel_1.setMaximumSize(new Dimension(50, 30));
-		lblNewLabel_1.setMinimumSize(new Dimension(50, 30));
-		lblNewLabel_1.setPreferredSize(new Dimension(50, 30));
-		panel_8.add(lblNewLabel_1);
+		JLabel pwdLabel = new JLabel(" 密码");
+		pwdLabel.setForeground(new Color(105, 105, 105));
+		pwdLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+		pwdLabel.setSize(new Dimension(50, 30));
+		pwdLabel.setMaximumSize(new Dimension(50, 30));
+		pwdLabel.setMinimumSize(new Dimension(50, 30));
+		pwdLabel.setPreferredSize(new Dimension(50, 30));
+		loginFunctionPanel.add(pwdLabel);
 		
-		passwordField = new JPasswordField();
-		passwordField.setBackground(new Color(245, 245, 245));
-		passwordField.setPreferredSize(new Dimension(250, 30));
-		panel_8.add(passwordField);
+		pwdField = new JPasswordField();
+		pwdField.setBackground(new Color(245, 245, 245));
+		pwdField.setPreferredSize(new Dimension(250, 30));
+		loginFunctionPanel.add(pwdField);
 		
-		JPanel panel_9 = new JPanel();
-		panel_9.setBackground(new Color(255, 255, 255));
-		panel_9.setPreferredSize(new Dimension(350, 30));
-		panel_8.add(panel_9);
-		panel_9.setLayout(new GridLayout(1, 0, 0, 0));
+		JPanel loginButtonPanel = new JPanel();
+		loginButtonPanel.setBackground(new Color(255, 255, 255));
+		loginButtonPanel.setPreferredSize(new Dimension(350, 30));
+		loginFunctionPanel.add(loginButtonPanel);
+		loginButtonPanel.setLayout(new GridLayout(1, 0, 0, 0));
 		
-		JLabel lblNewLabel_2_2 = new JLabel("");
-		panel_9.add(lblNewLabel_2_2);
+		JLabel emptySpace1 = new JLabel("");
+		loginButtonPanel.add(emptySpace1);
 		
-		JButton btnNewButton_5_1_1_1 = new JButton("登录");
-		btnNewButton_5_1_1_1.addActionListener(new ActionListener() {
+		JButton loginOKButton = new JButton("登录");
+		loginOKButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String name = textField.getText();
-                String password = new String(passwordField.getPassword());
+				String name = usrNameField.getText();
+                String password = new String(pwdField.getPassword());
+
+                int usrId = UsersTableActions.checkUser(name, name, password);
                 
-                if (UsersTableActions.checkUser(name, name, password)){
+                if (usrId!=0){
                     frame.getContentPane().setVisible(false);
-                    frame.setContentPane(new Index(name, UsersTableActions.getAvatar(name, password), frame).getContentJPanel());
-                	UsersTableActions.updateLogin(name, password);
+                    frame.setContentPane(new Index(usrId, frame).getContentJPanel());
+                	UsersTableActions.updateLogin(usrId);
                 }else{
-                    textField.setText("");
-                    passwordField.setText("");
+                    usrNameField.setText("");
+                    pwdField.setText("");
                     mention.setText("用户名/密码错误");
                 }
 			}
 		});
-		btnNewButton_5_1_1_1.setPreferredSize(new Dimension(120, 30));
-		btnNewButton_5_1_1_1.setMinimumSize(new Dimension(120, 30));
-		btnNewButton_5_1_1_1.setMaximumSize(new Dimension(120, 30));
-		btnNewButton_5_1_1_1.setForeground(new Color(105, 105, 105));
-		btnNewButton_5_1_1_1.setBorderPainted(false);
-		panel_9.add(btnNewButton_5_1_1_1);
+		loginOKButton.setPreferredSize(new Dimension(120, 30));
+		loginOKButton.setMinimumSize(new Dimension(120, 30));
+		loginOKButton.setMaximumSize(new Dimension(120, 30));
+		loginOKButton.setForeground(new Color(105, 105, 105));
+		loginOKButton.setBorderPainted(false);
+		loginButtonPanel.add(loginOKButton);
 		
-		JLabel lblNewLabel_2_1 = new JLabel("");
-		panel_9.add(lblNewLabel_2_1);
+		JLabel emptySpace2 = new JLabel("");
+		loginButtonPanel.add(emptySpace2);
 		
-		JButton btnNewButton_5_1_1 = new JButton("清空");
-		btnNewButton_5_1_1.addActionListener(new ActionListener() {
+		JButton loginCancelButton = new JButton("清空");
+		loginCancelButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setText("");
-				passwordField.setText("");
+				usrNameField.setText("");
+				pwdField.setText("");
 				mention.setText("");
 			}
 		});
-		btnNewButton_5_1_1.setPreferredSize(new Dimension(120, 30));
-		btnNewButton_5_1_1.setMinimumSize(new Dimension(120, 30));
-		btnNewButton_5_1_1.setMaximumSize(new Dimension(120, 30));
-		btnNewButton_5_1_1.setForeground(new Color(105, 105, 105));
-		btnNewButton_5_1_1.setBorderPainted(false);
-		panel_9.add(btnNewButton_5_1_1);
+		loginCancelButton.setPreferredSize(new Dimension(120, 30));
+		loginCancelButton.setMinimumSize(new Dimension(120, 30));
+		loginCancelButton.setMaximumSize(new Dimension(120, 30));
+		loginCancelButton.setForeground(new Color(105, 105, 105));
+		loginCancelButton.setBorderPainted(false);
+		loginButtonPanel.add(loginCancelButton);
 		
-		JLabel lblNewLabel_2 = new JLabel("");
-		panel_9.add(lblNewLabel_2);
+		JLabel emptySpace3 = new JLabel("");
+		loginButtonPanel.add(emptySpace3);
 		
 		mention = new JLabel("");
 		mention.setForeground(Color.RED);
-		panel_10.add(mention);
+		loginPanel.add(mention);
 		
 	}
 	

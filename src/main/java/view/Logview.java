@@ -1,66 +1,53 @@
 package view;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
 import java.awt.BorderLayout;
-import javax.swing.JPanel;
-import java.awt.GridLayout;
-import java.awt.Image;
-
-import javax.swing.JLabel;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-
-import dao.database.UsersTableActions;
-import org.eclipse.wb.swing.FocusTraversalOnArray;
-
-import net.bytebuddy.agent.builder.AgentBuilder.CircularityLock;
-import utils.Log;
-
-import java.awt.Component;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Rectangle;
+import java.awt.EventQueue;
 import java.awt.FlowLayout;
-import javax.swing.SwingConstants;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseMotionAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseAdapter;
+import java.awt.event.ActionListener;
 
-public class Index {
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+
+import utils.Log;
+
+public class Logview {
 
 	private JPanel contentJPanel;
+	
+	
 	public JPanel getContentJPanel() {
 		return contentJPanel;
 	}
 
+
+
 	public void setContentJPanel(JPanel contentJPanel) {
 		this.contentJPanel = contentJPanel;
 	}
-
-
-
+	
+	
 	/**
 	 * Create the application.
 	 */
-	public Index(int id, final JFrame frame) {
+	public Logview(int id, JFrame frame) {
 		contentJPanel = new JPanel();
 		contentJPanel.setPreferredSize(new Dimension(1000, 700));
 		contentJPanel.setLayout(new BorderLayout(0,0));
 		initialize(id, frame);
-		Log.log("成功加载首页");
+		Log.log("成功加载登录界面");
 	}
-	
-
 
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize(int id, final JFrame frame) {
-		
+	private void initialize(final int id, final JFrame frame) {
 		String dir = System.getProperty("user.dir") + "/resources/view/";
 		
 		JPanel leftBarMenuPanel = new JPanel();
@@ -214,31 +201,19 @@ public class Index {
 		mainHeadMenuBarPanel.setBackground(new Color(255, 255, 255));
 		mainPanel.add(mainHeadMenuBarPanel, BorderLayout.NORTH);
 		
-		JLabel usr_label = new JLabel("用户名");
-		usr_label.setHorizontalAlignment(SwingConstants.RIGHT);
-		usr_label.setMaximumSize(new Dimension(180, 30));
-		usr_label.setMinimumSize(new Dimension(120, 30));
-		usr_label.setPreferredSize(new Dimension(120, 30));
-		usr_label.setForeground(new Color(105, 105, 105));
-		ImageIcon icon = new ImageIcon(dir + UsersTableActions.getAvatar(id));
-		icon.setImage(icon.getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
-        usr_label.setIcon(icon);
-        usr_label.setText(UsersTableActions.getName(id));
-		mainHeadMenuBarPanel.add(usr_label);
-		
-		JButton exitButton = new JButton("退出账号");
-		exitButton.addActionListener(new ActionListener() {
+		JButton backToIndexButton = new JButton("返回首页");
+		backToIndexButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.getContentPane().setVisible(false);
-                frame.setContentPane(new Login(frame).getContentJPanel());
+                frame.setContentPane(new Index(id, frame).getContentJPanel());
 			}
 		});
-		exitButton.setPreferredSize(new Dimension(120, 30));
-		exitButton.setMinimumSize(new Dimension(120, 30));
-		exitButton.setMaximumSize(new Dimension(120, 30));
-		exitButton.setForeground(new Color(105, 105, 105));
-		exitButton.setBorderPainted(false);
-		mainHeadMenuBarPanel.add(exitButton);
+		backToIndexButton.setPreferredSize(new Dimension(120, 30));
+		backToIndexButton.setMinimumSize(new Dimension(120, 30));
+		backToIndexButton.setMaximumSize(new Dimension(120, 30));
+		backToIndexButton.setForeground(new Color(105, 105, 105));
+		backToIndexButton.setBorderPainted(false);
+		mainHeadMenuBarPanel.add(backToIndexButton);
 	}
 
 }
