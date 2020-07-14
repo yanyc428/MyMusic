@@ -1,0 +1,497 @@
+hello world
+hello world
+/Users/yanyuchen/IdeaProjects/mymusic/target/classes/view/
+2020-07-13 23:13:30 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-13 23:13:30 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-13 23:13:34 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+/Users/yanyuchen/IdeaProjects/mymusic/target/classes/view/
+2020-07-13 23:15:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-13 23:30:48 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-13 23:31:52 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+/Users/yanyuchen/IdeaProjects/mymusic/resources/view/logo.png
+/Users/yanyuchen/IdeaProjects/mymusic/resources/view/logo.png
+2020-07-14 04:00:51 Thread[main,5,main] users创建成功
+2020-07-14 04:01:45 Thread[main,5,main] users创建成功
+2020-07-14 12:40:42 Thread[main,5,main] singers创建成功
+2020-07-14 12:40:42 Thread[main,5,main] songs创建成功
+2020-07-14 12:51:26 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 12:51:26 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 12:52:07 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 12:52:07 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 12:55:54 Thread[main,5,main] users删除成功
+2020-07-14 12:55:54 Thread[main,5,main] users创建成功
+2020-07-14 12:57:26 Thread[main,5,main] users删除成功
+2020-07-14 12:57:26 Thread[main,5,main] users创建成功
+2020-07-14 12:57:49 Thread[main,5,main] users删除成功
+2020-07-14 12:57:49 Thread[main,5,main] users创建成功
+2020-07-14 12:57:49 Thread[main,5,main] 一次sql语句执行成功
+2020-07-14 12:57:58 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+/Users/yanyuchen/QR.png/Users/yanyuchen/QR.png
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO localhost
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFKq5TQUCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFKq5TQUCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<740987012@qq.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   740987012@qq.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: 740987012@qq.com
+Message-ID: <1736715077.0.1594710498525.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+b2hrbHJw
+.
+250 Mail OK queued as smtp2,GtxpCgDXtoLhWQ1ft2aTEw--.5219S2 1594710498
+QUIT
+221 Bye
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO localhost
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UrAcHE4UCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UrAcHE4UCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<740987012@qq.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   740987012@qq.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: 740987012@qq.com
+Message-ID: <2062054861.1.1594710559007.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+Rjg4R3hl
+.
+250 Mail OK queued as smtp4,HNxpCgDngUceWg1fkQBKFQ--.5048S2 1594710559
+QUIT
+221 Bye
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO localhost
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFNdAZLUCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFNdAZLUCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<740987012@qq.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   740987012@qq.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: 740987012@qq.com
+Message-ID: <833492018.2.1594710561042.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+UUFqQUxt
+.
+250 Mail OK queued as smtp4,HNxpCgDXbRMgWg1fXwFKFQ--.4770S2 1594710561
+QUIT
+221 Bye
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO localhost
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2Urlmmp8UCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2Urlmmp8UCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<740987012@qq.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   740987012@qq.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: 740987012@qq.com
+Message-ID: <1801441513.0.1594710758157.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+UEp3d1dW
+.
+250 Mail OK queued as smtp4,HNxpCgA31LflWg1ftT5KFQ--.4928S2 1594710758
+QUIT
+221 Bye
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO 192.168.1.102
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UF3_uutUCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UF3_uutUCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<740987012@qq.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   740987012@qq.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: 740987012@qq.com
+Message-ID: <398995644.0.1594712892940.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+YWVKM3FG
+.
+250 Mail OK queued as smtp3,G9xpCgCXKXU8Yw1fai3_GQ--.5611S2 1594712892
+QUIT
+221 Bye
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO localhost
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFzywx3UCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFzywx3UCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<740987012@qq.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   740987012@qq.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: 740987012@qq.com
+Message-ID: <512598715.0.1594712996721.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+bjJobVlQ
+.
+250 Mail OK queued as smtp3,G9xpCgDXNdekYw1f_lH_GQ--.5495S2 1594712996
+QUIT
+221 Bye
+2020-07-14 16:05:15 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:05:15 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO localhost
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFw4oQkUCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFw4oQkUCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<740987012@qq.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   740987012@qq.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: 740987012@qq.com
+Message-ID: <1666219238.0.1594713945048.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+Uk9QY1NS
+.
+250 Mail OK queued as smtp3,G9xpCgDn+fpYZw1fW8gAGg--.5630S2 1594713945
+QUIT
+221 Bye
+2020-07-14 16:06:27 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:06:27 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO localhost
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UrFg5GUUCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UrFg5GUUCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<mymusic_admin@163.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   mymusic_admin@163.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: mymusic_admin@163.com
+Message-ID: <391540690.0.1594714573765.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+YWNjbWV4
+.
+250 Mail OK queued as smtp1,GdxpCgB3KxTNaQ1fzmaQBQ--.5954S2 1594714573
+QUIT
+221 Bye
+DEBUG: setDebug: JavaMail version 1.5.0-b01
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.163.com", port 25, isSSL false
+220 163.com Anti-spam GT for Coremail System (163com[20141201])
+DEBUG SMTP: connected to host "smtp.163.com", port: 25
+
+EHLO 192.168.1.102
+250-mail
+250-PIPELINING
+250-AUTH LOGIN PLAIN 
+250-AUTH=LOGIN PLAIN
+250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFKCoQcUCa0xDrUUUUj
+250-STARTTLS
+250 8BITMIME
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN "
+DEBUG SMTP: Found extension "AUTH=LOGIN", arg "PLAIN"
+DEBUG SMTP: Found extension "coremail", arg "1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFKCoQcUCa0xDrUUUUj"
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<mymusic_admin@163.com>
+250 Mail OK
+RCPT TO:<mymusic_admin@163.com>
+250 Mail OK
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   mymusic_admin@163.com
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From: mymusic_admin@163.com
+To: mymusic_admin@163.com
+Message-ID: <1639562843.0.1594714733203.JavaMail.yanyuchen@smtp.163.com>
+Subject: =?UTF-8?B?W+ivt+WLv+WbnuWkjV1pbXVzaWMt?=
+ =?UTF-8?B?54Ot54ix5L2g55qE6Z+z5LmQIOeUqOaIt+azqOWGjOmqjOivgeeggQ==?=
+MIME-Version: 1.0
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: base64
+
+bXltdXNpY+mfs+S5kCAtIOeDreeIseS9oOeahOmfs+S5kArnlKjmiLfms6jlhozpqozor4HnoIE6
+c1Q4MDRk
+.
+250 Mail OK queued as smtp1,GdxpCgDnXqNsag1fNLCQBQ--.6268S2 1594714733
+QUIT
+221 Bye
+2020-07-14 16:19:13 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功
+2020-07-14 16:19:29 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:19:29 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:26:09 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:26:09 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:26:17 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:26:17 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:37:27 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:37:27 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:37:27 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功
+2020-07-14 16:37:27 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功
+2020-07-14 16:40:16 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:40:16 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 16:40:16 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功
+2020-07-14 16:40:16 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功
+2020-07-14 18:37:01 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:37:01 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:46:40 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:46:41 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:46:41 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功
+2020-07-14 18:46:41 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功
+2020-07-14 18:55:50 Thread[main,5,main] hello world
+
+2020-07-14 18:55:56  Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:55:59  Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:55:59  Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:55:59  Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:55:59  Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 18:55:59  Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-14 19:12:20 Thread[main,5,main] 成功加载登录界面
+2020-07-14 19:13:14 Thread[AWT-EventQueue-0,6,main] 成功加载注册界面
+2020-07-14 19:13:18 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
