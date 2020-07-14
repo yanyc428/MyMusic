@@ -59,7 +59,7 @@ public class Index {
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize(int id, final JFrame frame) {
+	private void initialize(final int id, final JFrame frame) {
 		
 		String dir = System.getProperty("user.dir") + "/resources/view/";
 		
@@ -233,6 +233,20 @@ public class Index {
                 frame.setContentPane(new Login(frame).getContentJPanel());
 			}
 		});
+		
+		JButton settingButton = new JButton("设置");
+		settingButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new Logview(id, frame).getContentJPanel());
+			}
+		});
+		settingButton.setPreferredSize(new Dimension(120, 30));
+		settingButton.setMinimumSize(new Dimension(120, 30));
+		settingButton.setMaximumSize(new Dimension(120, 30));
+		settingButton.setForeground(new Color(105, 105, 105));
+		settingButton.setBorderPainted(false);
+		mainHeadMenuBarPanel.add(settingButton);
 		exitButton.setPreferredSize(new Dimension(120, 30));
 		exitButton.setMinimumSize(new Dimension(120, 30));
 		exitButton.setMaximumSize(new Dimension(120, 30));

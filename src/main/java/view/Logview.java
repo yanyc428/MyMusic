@@ -7,6 +7,9 @@ import java.awt.EventQueue;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -16,22 +19,24 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import utils.Log;
+import javax.swing.JTextPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import java.awt.Insets;
+import javax.swing.DropMode;
 
 public class Logview {
 
 	private JPanel contentJPanel;
-	
+	private JTextPane logPane;
 	
 	public JPanel getContentJPanel() {
 		return contentJPanel;
 	}
 
-
-
 	public void setContentJPanel(JPanel contentJPanel) {
 		this.contentJPanel = contentJPanel;
 	}
-	
 	
 	/**
 	 * Create the application.
@@ -208,12 +213,81 @@ public class Logview {
                 frame.setContentPane(new Index(id, frame).getContentJPanel());
 			}
 		});
+		
+		JButton errorButton = new JButton("错误日志");
+		errorButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					FileReader reader;
+					reader = new FileReader(System.getProperty("user.dir") + "/log/" + Log.exception);
+					BufferedReader bReader = new BufferedReader(reader);
+					StringBuilder sb = new StringBuilder();//定义一个字符串缓存，将字符串存放缓存中
+			        String s = "";
+			        while ((s =bReader.readLine()) != null) {//逐行读取文件内容，不读取换行符和末尾的空格
+			            sb.append(s + "\n");//将读取的字符串添加换行符后累加存放在缓存中
+			        }
+			        bReader.close();
+			        String str = sb.toString();
+			        logPane.setText(str);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		errorButton.setPreferredSize(new Dimension(120, 30));
+		errorButton.setMinimumSize(new Dimension(120, 30));
+		errorButton.setMaximumSize(new Dimension(120, 30));
+		errorButton.setForeground(new Color(105, 105, 105));
+		errorButton.setBorderPainted(false);
+		mainHeadMenuBarPanel.add(errorButton);
+		
+		JButton logButton = new JButton("运行日志");
+		logButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					FileReader reader;
+					reader = new FileReader(System.getProperty("user.dir") + "/log/" + Log.fileName);
+					BufferedReader bReader = new BufferedReader(reader);
+					StringBuilder sb = new StringBuilder();//定义一个字符串缓存，将字符串存放缓存中
+			        String s = "";
+			        while ((s =bReader.readLine()) != null) {//逐行读取文件内容，不读取换行符和末尾的空格
+			            sb.append(s + "\n");//将读取的字符串添加换行符后累加存放在缓存中
+			        }
+			        bReader.close();
+			        String str = sb.toString();
+			        logPane.setText(str);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		logButton.setPreferredSize(new Dimension(120, 30));
+		logButton.setMinimumSize(new Dimension(120, 30));
+		logButton.setMaximumSize(new Dimension(120, 30));
+		logButton.setForeground(new Color(105, 105, 105));
+		logButton.setBorderPainted(false);
+		mainHeadMenuBarPanel.add(logButton);
 		backToIndexButton.setPreferredSize(new Dimension(120, 30));
 		backToIndexButton.setMinimumSize(new Dimension(120, 30));
 		backToIndexButton.setMaximumSize(new Dimension(120, 30));
 		backToIndexButton.setForeground(new Color(105, 105, 105));
 		backToIndexButton.setBorderPainted(false);
 		mainHeadMenuBarPanel.add(backToIndexButton);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBorder(null);
+		mainPanel.add(scrollPane, BorderLayout.CENTER);
+		
+		logPane = new JTextPane();
+		logPane.setEnabled(false);
+		logPane.setMargin(new Insets(20, 20, 20, 20));
+		logPane.setText("选取日志类型……");
+		scrollPane.setViewportView(logPane);
+		
+		
+		
 	}
 
 }
