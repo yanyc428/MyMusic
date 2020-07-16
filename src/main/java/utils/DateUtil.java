@@ -3,6 +3,8 @@ package utils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.mail.internet.NewsAddress;
+
 public class DateUtil {
     private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 
@@ -12,5 +14,9 @@ public class DateUtil {
      */
     public static String now(){
         return df.format(new Date()) +" ";
+    }
+    public static String logName() {
+    	SimpleDateFormat dFormat = new SimpleDateFormat("yyyy-MM-dd");
+    	return dFormat.format(new Date());
     }
 }

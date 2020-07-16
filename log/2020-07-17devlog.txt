@@ -1,0 +1,3 @@
+2020-07-17 02:03:22 Thread[AWT-EventQueue-0,6,main] 2020-07-17devlog.txt 文件内容已清空！
+2020-07-17 02:03:22 Thread[AWT-EventQueue-0,6,main] 2020-07-17deverror.txt 文件内容已清空！
+2020-07-17 02:03:22 Thread[AWT-EventQueue-0,6,main] 缓存清理完毕！

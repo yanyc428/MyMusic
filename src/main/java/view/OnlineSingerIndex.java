@@ -27,9 +27,14 @@ import dao.database.UsersTableActions;
 import enumItem.Area;
 import enumItem.Browser;
 import enumItem.Letter;
+import enumItem.Platform;
+
 import org.openqa.selenium.WebDriver;
 import service.OpenWebDriver;
+import service.spider.KSingerSpider;
 import service.spider.QSingerSpider;
+import service.spider.SingerSpider;
+import service.spider.WSingerSpider;
 import utils.Log;
 import javax.swing.JRadioButton;
 import java.awt.GridLayout;
@@ -201,6 +206,12 @@ public class OnlineSingerIndex {
 		offlinePanel.add(offlineLabel);
 		
 		JButton offlineSingerButton = new JButton("歌手");
+		offlineSingerButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new OfflineSingerIndex(id, frame).getContentJPanel());
+			}
+		});
 		offlineSingerButton.setHorizontalAlignment(SwingConstants.LEFT);
 		offlineSingerButton.setForeground(new Color(105, 105, 105));
 		offlineSingerButton.setPreferredSize(new Dimension(160, 30));
@@ -488,17 +499,89 @@ public class OnlineSingerIndex {
 		plaPanel.add(qButton);
 		qButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				jpnButton.setText("日语");
+				korButton.setText("韩语");
+				korButton.setVisible(true);
+				maleButton.setVisible(true);
+				femaleButton.setVisible(true);
+				groupButton.setText("组合");
 			}
 		});
 		buttonGroup.add(qButton);
 		
-		JRadioButton wButton = new JRadioButton("虾米音乐");
+		final JRadioButton wButton = new JRadioButton("网易云音乐");
+		wButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jpnButton.setText("日语");
+				korButton.setText("韩语");
+				korButton.setVisible(true);
+				maleButton.setVisible(true);
+				femaleButton.setVisible(true);
+				groupButton.setText("组合");
+			}
+		});
 		plaPanel.add(wButton);
 		buttonGroup.add(wButton);
 		
-		JRadioButton xButton = new JRadioButton("网易云音乐");
-		plaPanel.add(xButton);
-		buttonGroup.add(xButton);
+		final JRadioButton kButton = new JRadioButton("酷狗音乐");
+		kButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				korButton.setVisible(false);
+				jpnButton.setText("日韩");
+				if (othButton.isSelected()) {
+					maleButton.setVisible(false);
+					femaleButton.setVisible(false);
+					groupButton.setText("其他");
+					groupButton.setSelected(true);
+				}
+				
+			}
+		});
+		plaPanel.add(kButton);
+		buttonGroup.add(kButton);
+		
+		othButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (kButton.isSelected()) {
+					maleButton.setVisible(false);
+					femaleButton.setVisible(false);
+					groupButton.setText("其他");
+					groupButton.setSelected(true);
+				}
+			}
+		});
+		
+		chnButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				maleButton.setVisible(true);
+				femaleButton.setVisible(true);
+				groupButton.setText("组合");
+			}
+		});
+		
+		ameButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				maleButton.setVisible(true);
+				femaleButton.setVisible(true);
+				groupButton.setText("组合");
+			}
+		});
+		
+		jpnButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				maleButton.setVisible(true);
+				femaleButton.setVisible(true);
+				groupButton.setText("组合");
+			}
+		});
+		
+		korButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				maleButton.setVisible(true);
+				femaleButton.setVisible(true);
+				groupButton.setText("组合");
+			}
+		});
 		
 		final JLabel mentionLabel = new JLabel();
 		mentionLabel.setForeground(Color.RED);
@@ -529,6 +612,11 @@ public class OnlineSingerIndex {
 
 				
 				ArrayList<HashMap<String, String>> mapList= new ArrayList<HashMap<String,String>>();
+				
+				if(qButton.isSelected()) map.put("platform", Platform.QQMuisc);
+				if(wButton.isSelected()) map.put("platform", Platform.WangYiYunMusic);
+				if(kButton.isSelected()) map.put("platform", Platform.KuGouMusic);
+				
 
 				if(buttonA.isSelected()) map.put("letter", Letter.A);
 				if(buttonB.isSelected()) map.put("letter", Letter.B);
@@ -582,7 +670,12 @@ public class OnlineSingerIndex {
 				}
 
 				WebDriver driver = new OpenWebDriver(Browser.CHROME, false).getDriver();
-				mapList = new QSingerSpider(driver).spider((Area)map.get("type"), (Letter)map.get("letter"));
+				SingerSpider singerSpider = null;
+				if (map.get("platform").equals(Platform.QQMuisc)) singerSpider = new QSingerSpider(driver);
+				if (map.get("platform").equals(Platform.WangYiYunMusic)) singerSpider = new WSingerSpider(driver);
+				if (map.get("platform").equals(Platform.KuGouMusic)) singerSpider = new KSingerSpider(driver);
+
+				mapList =singerSpider.spider((Area)map.get("type"), (Letter)map.get("letter"));
 				driver.quit();
 
 				setPanel.removeAll();

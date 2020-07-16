@@ -1,9 +1,6 @@
 package dao.database;
 
-import enumItem.Area;
-import enumItem.Letter;
-import enumItem.Singers;
-import enumItem.Table;
+import enumItem.*;
 import utils.Log;
 
 import java.sql.Connection;
@@ -11,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 public class SingersTableActions {
@@ -18,7 +16,7 @@ public class SingersTableActions {
     private  static Connection connection = Db.openDatabase();
 
     @Override
-    protected void finalize() throws Throwable {
+    protected void finalize() {
         Db.closeDatabase(connection);
     }
 
@@ -48,7 +46,7 @@ public class SingersTableActions {
         try {
             DbDML.executeNoneReturnSqlScript(connection,
                     "INSERT INTO singers(name,type,first_letter, url, source) VALUES (" +
-                            "'" +  name + "'," +
+                            "'" +  name.replaceAll("'", "''") + "'," +
                              + area.number() + "," +
                             "'" +  letter.toString() + "'," +
                             "'"+ url + "'," +
@@ -56,6 +54,7 @@ public class SingersTableActions {
             Log.log(name +"数据插入成功");
         } catch (SQLException throwables) {
             Log.log(name + url + "已存在");
+            updateTime(name, url);
         }
 
     }
@@ -256,5 +255,47 @@ public class SingersTableActions {
         }
 
         return null;
+    }
+    public static void updateTime(String name, String URL){
+        try {
+            DbDML.executeNoneReturnSqlScript(connection,
+                    "UPDATE SINGERS SET UPDATE_TIME = now() "+
+                            "WHERE name = '" + name.replaceAll("'", "''") + "' " +
+                            "and url = '" + URL + "';");
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+    public static ArrayList<HashMap<String, String>> selectOffline(Area area, Letter letter, Platform platform){
+        ArrayList<HashMap<String, String>> mapList = new ArrayList<HashMap<String, String>>();
+        ResultSet set;
+
+        try {
+            set = DbDML.executeReturnSqlScript(connection,
+                    "SELECT NAME, URL FROM SINGERS " +
+                            "WHERE type = " + area.number() + " " +
+                            " AND first_letter = '" + letter.toString() + "' "+
+                            " and source = "+ platform.ordinal() + ";");
+
+            while(set.next()){
+                HashMap<String, String> map = new HashMap<String, String>();
+                map.put("name", set.getString("NAME"));
+                map.put("url", set.getString("URL"));
+                mapList.add(map);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return mapList;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<HashMap<String, String>> mapList = new ArrayList<HashMap<String, String>>();
+        mapList = selectOffline(Area.CHN_G, Letter.A, Platform.WangYiYunMusic);
+        for (HashMap<String, String> item :
+                mapList) {
+            System.out.println(item);
+        }
     }
 }

@@ -235,11 +235,6 @@ public class QSongSpider {
 
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
-        QSongSpider spider = new QSongSpider(Browser.CHROME);
-        spider.getSongByName("love story");
-    }
-
     /**
      * 根据url下载图片 返回图片存放地址
      * @param url 图片url

@@ -29,7 +29,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 
-public class QSingerSpider {
+public class QSingerSpider implements SingerSpider{
     private WebDriver driver;
     private WebDriverWait wait;
 
@@ -124,7 +124,7 @@ public class QSingerSpider {
          */
         try {
             this.driver.get(url);
-            Thread.sleep(5000);
+            Thread.sleep(1000); //至关重要 不能删
             this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("singer_list_txt")));
             elements = this.driver.findElements(By.className("singer_list_txt__item"));
         } catch (Exception e){

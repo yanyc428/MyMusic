@@ -185,6 +185,12 @@ public class Register {
 		onlinePanel.add(onlineLabel);
 		
 		JButton onlineSingerButton = new JButton("歌手");
+		onlineSingerButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new OnlineSingerIndex(0, frame).getContentJPanel());
+			}
+		});
 		onlineSingerButton.setForeground(new Color(105, 105, 105));
 		onlineSingerButton.setHorizontalAlignment(SwingConstants.LEFT);
 		onlineSingerButton.setBorderPainted(false);
@@ -221,6 +227,12 @@ public class Register {
 		offlinePanel.add(offlineLabel);
 		
 		JButton offlineSingerButton = new JButton("歌手");
+		offlineSingerButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new OfflineSingerIndex(0, frame).getContentJPanel());
+			}
+		});
 		offlineSingerButton.setHorizontalAlignment(SwingConstants.LEFT);
 		offlineSingerButton.setForeground(new Color(105, 105, 105));
 		offlineSingerButton.setPreferredSize(new Dimension(160, 30));

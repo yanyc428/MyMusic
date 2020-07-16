@@ -2,22 +2,18 @@ package service.spider;
 
 import dao.database.SingersTableActions;
 import enumItem.Area;
-import enumItem.Browser;
 import enumItem.Letter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import service.OpenWebDriver;
 import utils.Log;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class WSingerSpider {
+public class WSingerSpider implements SingerSpider{
 
     private WebDriver driver;
     private WebDriverWait wait;
@@ -31,7 +27,6 @@ public class WSingerSpider {
     public ArrayList<HashMap<String, String>> spider(Area area, Letter letter){
         ArrayList<HashMap<String, String>> mapList= new ArrayList<HashMap<String,String>>();
         try {
-
             String url = "https://music.163.com/#/discover/artist/cat?";
             switch (area.number()){
                 case 11:
@@ -81,7 +76,6 @@ public class WSingerSpider {
                     break;
 
             }
-            System.out.println(url);
             Log.log("当前爬取 " + area.toString() + " 首字母 " + letter.toString());
             Log.log("爬取url:" + url);
             mapList.addAll(getSingers(url, area, letter));
@@ -96,7 +90,6 @@ public class WSingerSpider {
     public ArrayList<HashMap<String, String>> getSingers(String url, Area area, Letter letter) {
         String name;
         String singer_url;
-        String new_url = "";
         List<WebElement> elements;
         ArrayList<HashMap<String, String>> mapList= new ArrayList<HashMap<String,String>>();
 
@@ -105,9 +98,10 @@ public class WSingerSpider {
          */
         try {
             this.driver.get(url);
-            Thread.sleep(5000);
-            this.wait.until(ExpectedConditions.presenceOfElementLocated(By.id("m-artist-box")));
-            elements = this.driver.findElements(By.tagName("p"));
+            Thread.sleep(1000); //至关重要 不能删
+            this.driver.switchTo().frame("contentFrame");
+            this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("nm-icn")));
+            elements = this.driver.findElement(By.id("m-artist-box")).findElements(By.className("nm-icn"));
         } catch (Exception e){
             e.printStackTrace();
             Log.error("url("+area.toString() +" "+ letter.toString() +")打开异常:" + url);
@@ -117,9 +111,8 @@ public class WSingerSpider {
         for (int i=0; i<elements.size(); i++){
             HashMap<String, String> map = new HashMap<String, String>();
             try {
-                name = elements.get(i).findElement(By.tagName("a")).getText();
+                name = elements.get(i).getText();
                 map.put("name", name);
-                Log.log("歌手名:" + name);
             } catch (Exception e){
                 e.printStackTrace();
                 Log.error("歌手名获取失败"+area.toString() +" "+ letter.toString()+" "+i);
@@ -127,16 +120,15 @@ public class WSingerSpider {
             }
 
             try {
-                singer_url = elements.get(i).findElement(By.tagName("a")).getAttribute("href");
+                singer_url = elements.get(i).getAttribute("href");
                 map.put("url", singer_url);
-                Log.log("歌手url:"+ singer_url);
             } catch (Exception e){
                 e.printStackTrace();
                 Log.error("歌手url获取失败"+area.toString() +" "+ letter.toString()+" "+name);
                 continue;
             }
 
-            SingersTableActions.singerInsert(name, area, letter, singer_url, 0);
+            SingersTableActions.singerInsert(name, area, letter, singer_url, 1);
 
             mapList.add(map);
         }
@@ -147,6 +139,5 @@ public class WSingerSpider {
     public void quit(){
         this.driver.quit();
     }
-
 
 }
