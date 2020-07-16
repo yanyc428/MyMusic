@@ -45,6 +45,10 @@ public class OpenWebDriver {
         }
     }
 
+    public void getURL(String url){
+        this.driver.get(url);
+    }
+
     public void quit(){
         this.driver.quit();
     }

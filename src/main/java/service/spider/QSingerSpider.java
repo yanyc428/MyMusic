@@ -147,7 +147,7 @@ public class QSingerSpider {
 
             try {
                 singer_url = elements.get(i).findElement(By.tagName("a")).getAttribute("href");
-                map.put("url", url);
+                map.put("url", singer_url);
                 Log.log("歌手url:"+ singer_url);
             } catch (Exception e){
                 e.printStackTrace();
@@ -155,21 +155,8 @@ public class QSingerSpider {
                 continue;
             }
 
-            try {
-                SingersTableActions.singerInsert(name, area, letter, singer_url, 0);
-                Log.log(name +"数据插入成功");
-            } catch (Exception e){
-                e.printStackTrace();
-                Log.error("数据插入失败"+area.toString() +" "+ letter.toString()+" "+name);
-                continue;
-            }
 
-
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            SingersTableActions.singerInsert(name, area, letter, singer_url, 0);
 
             mapList.add(map);
         }

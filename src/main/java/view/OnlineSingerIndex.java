@@ -38,6 +38,8 @@ import java.awt.CardLayout;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import javax.swing.JList;
+import javax.swing.ScrollPaneConstants;
 
 public class OnlineSingerIndex {
 
@@ -298,6 +300,7 @@ public class OnlineSingerIndex {
 		lblNewLabel.setPreferredSize(new Dimension(50, 40));
 		
 		final JRadioButton chnButton = new JRadioButton("华语");
+		chnButton.setSelected(true);
 		lanPanel.add(chnButton);
 		
 		final JRadioButton ameButton = new JRadioButton("欧美");
@@ -332,6 +335,7 @@ public class OnlineSingerIndex {
 		genPanel.add(lblNewLabel_2);
 		
 		final JRadioButton maleButton = new JRadioButton("男");
+		maleButton.setSelected(true);
 		genPanel.add(maleButton);
 		
 		final JRadioButton femaleButton = new JRadioButton("女");
@@ -359,6 +363,7 @@ public class OnlineSingerIndex {
 		letPanel.add(lblNewLabel_2_1);
 		
 		final JRadioButton buttonA = new JRadioButton("A");
+		buttonA.setSelected(true);
 		letPanel.add(buttonA);
 		
 		final JRadioButton buttonB = new JRadioButton("B");
@@ -479,6 +484,7 @@ public class OnlineSingerIndex {
 		plaPanel.add(lblNewLabel_2_2);
 		
 		final JRadioButton qButton = new JRadioButton("QQ音乐");
+		qButton.setSelected(true);
 		plaPanel.add(qButton);
 		qButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -494,14 +500,34 @@ public class OnlineSingerIndex {
 		plaPanel.add(xButton);
 		buttonGroup.add(xButton);
 		
-		JPanel retrunPanel = new JPanel();
-		retrunPanel.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
-		retrunPanel.setBackground(Color.WHITE);
-		singerIndexPanel.add(retrunPanel, BorderLayout.CENTER);
-		retrunPanel.setLayout(new CardLayout(0, 0));
+		final JLabel mentionLabel = new JLabel();
+		mentionLabel.setForeground(Color.RED);
+		mentionLabel.setPreferredSize(new Dimension(300, 40));
+		mentionLabel.setHorizontalTextPosition(SwingConstants.RIGHT);
+		mentionLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+		plaPanel.add(mentionLabel);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		scrollPane.setMinimumSize(new Dimension(700, 1000));
+		scrollPane.setMaximumSize(new Dimension(700, 32767));
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane.setBorder(null);
+		singerIndexPanel.add(scrollPane, BorderLayout.CENTER);
+		
+		final JPanel setPanel = new JPanel();
+		setPanel.setPreferredSize(new Dimension(700,400));
+		setPanel.setMinimumSize(new Dimension(700, 400));
+		setPanel.setMaximumSize(new Dimension(700, 32767));
+		setPanel.setBackground(Color.WHITE);
+		scrollPane.setViewportView(setPanel);
+		setPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
+		
 
 		searchButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+
+				
 				ArrayList<HashMap<String, String>> mapList= new ArrayList<HashMap<String,String>>();
 
 				if(buttonA.isSelected()) map.put("letter", Letter.A);
@@ -557,13 +583,31 @@ public class OnlineSingerIndex {
 
 				WebDriver driver = new OpenWebDriver(Browser.CHROME, false).getDriver();
 				mapList = new QSingerSpider(driver).spider((Area)map.get("type"), (Letter)map.get("letter"));
-
-				for (HashMap<String, String> item: mapList) {
-					System.out.println(item);
-				}
-
 				driver.quit();
 
+				setPanel.removeAll();
+				setPanel.setPreferredSize(new Dimension(700,mapList.size()*6));
+
+				for (final HashMap<String, String> item: mapList) {
+					JButton itemButton = new JButton(item.get("name"));
+					itemButton.setPreferredSize(new Dimension(120, 30));
+					itemButton.setMinimumSize(new Dimension(120, 30));
+					itemButton.setMaximumSize(new Dimension(120, 30));
+					itemButton.setForeground(new Color(105, 105, 105));
+					itemButton.setBorderPainted(false);
+					itemButton.addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent e1) {
+							new OpenWebDriver(Browser.CHROME, true).getURL(item.get("url"));
+
+						}
+					});
+					setPanel.add(itemButton);
+					setPanel.revalidate();
+				}
+
+				
+				mentionLabel.setText("检索完毕");
+				
 
 			}
 		});

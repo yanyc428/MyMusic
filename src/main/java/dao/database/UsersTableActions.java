@@ -6,6 +6,7 @@ import utils.MD5Utils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UsersTableActions {
 
@@ -76,14 +77,18 @@ public class UsersTableActions {
         Db db = new Db();
         Connection connection = db.openDatabase();
 
-        DbDML.executeNoneReturnSqlScript(connection,
-                "INSERT INTO users(user_name,e_mail,password,gender, avatar) VALUES (" +
-                        "'" + userName + "'," +
-                        "'" + eMail + "'," +
-                        "'" + MD5Utils.code(password) + "'," +
-                        gender + "," +
-                        "'"+  avatar + "'"+
-                        ");");
+        try {
+            DbDML.executeNoneReturnSqlScript(connection,
+                    "INSERT INTO users(user_name,e_mail,password,gender, avatar) VALUES (" +
+                            "'" + userName + "'," +
+                            "'" + eMail + "'," +
+                            "'" + MD5Utils.code(password) + "'," +
+                            gender + "," +
+                            "'"+  avatar + "'"+
+                            ");");
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
         db.closeDatabase(connection);
     }
@@ -144,9 +149,13 @@ public class UsersTableActions {
         Db db = new Db();
         Connection connection = db.openDatabase();
 
-        DbDML.executeNoneReturnSqlScript(connection,
-                    "UPDATE USERS SET LAST_LOGIN = now() "+
-                            "WHERE id = " + id + ";");
+        try {
+            DbDML.executeNoneReturnSqlScript(connection,
+                        "UPDATE USERS SET LAST_LOGIN = now() "+
+                                "WHERE id = " + id + ";");
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
         db.closeDatabase(connection);
     }

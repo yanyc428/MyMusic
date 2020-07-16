@@ -8,8 +8,6 @@ import javax.swing.JFrame;
 import net.bytebuddy.asm.Advice.This;
 
 public class MusicGUI {
-
-
 	public static void display(){
 		JFrame frame = new JFrame("iMusic音乐- 热爱你的音乐");
 		frame.setContentPane(new Login(frame).getContentJPanel());
@@ -19,6 +17,4 @@ public class MusicGUI {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-	
-
 }

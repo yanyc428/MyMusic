@@ -7,6 +7,7 @@ import enumItem.Table;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,17 +32,21 @@ public class SongsTableActions {
         Db db = new Db();
         Connection connection = db.openDatabase();
 
-        DbDML.executeNoneReturnSqlScript(connection,
-                "INSERT INTO songs(name,singer_id, album, url,lyric, photo, source) VALUES " +
-                        "(" +
-                        "'" + name + "'," +
-                        singerId + "," +
-                        "'" + album + "'," +
-                        "'" +  url + "'," +
-                        "'" + lyric + "'," +
-                        "'src/main/resources/song_photo/" + singerId + album + lyric.substring(0,2) +".png'," +
-                        + source +
-                        ");");
+        try {
+            DbDML.executeNoneReturnSqlScript(connection,
+                    "INSERT INTO songs(name,singer_id, album, url,lyric, photo, source) VALUES " +
+                            "(" +
+                            "'" + name + "'," +
+                            singerId + "," +
+                            "'" + album + "'," +
+                            "'" +  url + "'," +
+                            "'" + lyric + "'," +
+                            "'src/main/resources/song_photo/" + singerId + album + lyric.substring(0,2) +".png'," +
+                            + source +
+                            ");");
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
         db.closeDatabase(connection);
     }
@@ -50,10 +55,14 @@ public class SongsTableActions {
         Db db = new Db();
         Connection connection = db.openDatabase();
 
-        DbDML.executeNoneReturnSqlScript(connection,
-                "UPDATE songs " +
-                    " SET update_time =  datetime('now', 'localtime')" +
-                        "WHERE name = " + name);
+        try {
+            DbDML.executeNoneReturnSqlScript(connection,
+                    "UPDATE songs " +
+                        " SET update_time =  datetime('now', 'localtime')" +
+                            "WHERE name = " + name);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
         db.closeDatabase(connection);
     }
@@ -62,10 +71,14 @@ public class SongsTableActions {
         Db db = new Db();
         Connection connection = db.openDatabase();
 
-        DbDML.executeNoneReturnSqlScript(connection,
-                "UPDATE songs " +
-                        " SET update_time =  datetime('now', 'localtime')" +
-                        "WHERE id = " + id);
+        try {
+            DbDML.executeNoneReturnSqlScript(connection,
+                    "UPDATE songs " +
+                            " SET update_time =  datetime('now', 'localtime')" +
+                            "WHERE id = " + id);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
         db.closeDatabase(connection);
     }

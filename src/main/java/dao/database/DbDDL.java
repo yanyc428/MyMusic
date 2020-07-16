@@ -35,7 +35,9 @@ public class DbDDL {
             "\tcreate_time timestamp default now() not null,\n" +
             "\tupdate_time timestamp default now() not null,\n" +
             "\tconstraint SINGERS_PK\n" +
-            "\t\tprimary key (id)\n" +
+            "\t\tprimary key (id),\n" +
+            "\tconstraint SINGERS_PK_2\n" +
+            "\t\tunique (NAME, URL)" +
             ");";
 
 //    for sqlite
