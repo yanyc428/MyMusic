@@ -18,7 +18,6 @@ public class DbDDL {
 //            "name varchar(20) not null,  \n" +
 //            "type int not null,  \n" +
 //            "first_letter varchar(5) not null, \n" +
-//            "photograph varchar(50) null,  \n" +
 //            "url varchar(50) null,  \n" +
 //            "create_time timestamp not null DEFAULT (datetime('now','localtime')),  \n" +
 //            "update_time timestamp not null DEFAULT (datetime('now','localtime'))\n" +
@@ -28,11 +27,11 @@ public class DbDDL {
     private static String createSingerTable = "create table singers\n" +
             "(\n" +
             "\tid int auto_increment,\n" +
-            "\tname varchar(20) not null,\n" +
+            "\tname varchar(40) not null,\n" +
             "\ttype int not null,\n" +
             "\tfirst_letter varchar(5) not null,\n" +
-            "\tphotograph varchar(20) default null,\n" +
-            "\turl varchar(50) not null,\n" +
+            "\turl varchar(100) not null,\n" +
+            "\tsource int not null,\n" +
             "\tcreate_time timestamp default now() not null,\n" +
             "\tupdate_time timestamp default now() not null,\n" +
             "\tconstraint SINGERS_PK\n" +

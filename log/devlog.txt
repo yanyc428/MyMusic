@@ -1,193 +1,1051 @@
-2020-07-14 22:16:51 Thread[main,5,main] devlog.txt 文件内容已清空！
-2020-07-14 22:16:51 Thread[main,5,main] deverror.txt 文件内容已清空！
-2020-07-14 22:16:51 Thread[main,5,main] 缓存清理完毕！
-2020-07-14 22:17:08 Thread[main,5,main] 成功加载登录界面
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 22:17:16 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 22:17:17 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:17:30 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
-2020-07-14 22:17:33 Thread[AWT-EventQueue-0,6,main] 成功加载注册界面
-2020-07-14 22:18:21 Thread[main,5,main] 成功加载登录界面
-2020-07-14 22:18:23 Thread[AWT-EventQueue-0,6,main] 成功加载注册界面
-2020-07-14 22:18:27 Thread[AWT-EventQueue-0,6,main] 生成随机字符串:wftLT5wiTEpfvRiz
-2020-07-14 22:41:49 Thread[main,5,main] 成功加载登录界面
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 22:41:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:42:00 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
-2020-07-14 22:42:34 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:42:34 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:42:34 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:42:34 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 22:42:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:43:42 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 22:43:48 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:45:35 Thread[main,5,main] 成功加载登录界面
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-1
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 22:45:41 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:50:12 Thread[main,5,main] 成功加载登录界面
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-1
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 22:50:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 22:50:20 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
-2020-07-14 23:07:16 Thread[main,5,main] 成功加载登录界面
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:07:23 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 23:07:24 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:07:25 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
-2020-07-14 23:14:32 Thread[main,5,main] 成功加载登录界面
-2020-07-14 23:14:37 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:14:38 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 23:14:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:14:40 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
-2020-07-14 23:23:12 Thread[main,5,main] 成功加载登录界面
-2020-07-14 23:23:22 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:23:22 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:23:22 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 23:23:22 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:23:22 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:23:22 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:23:23 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:23:23 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:23:23 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:23:23 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:23:23 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 23:23:23 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:23:23 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 23:23:23 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:23:25 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
-2020-07-14 23:23:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:23:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:23:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:23:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:23:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:23:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:23:43 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 23:31:12 Thread[main,5,main] 成功加载登录界面
-2020-07-14 23:31:18 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:31:18 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:31:18 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 23:31:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:31:22 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
-2020-07-14 23:32:26 Thread[main,5,main] 成功加载登录界面
-2020-07-14 23:32:34 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:32:34 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:32:34 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
-2020-07-14 23:32:34 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:32:34 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:32:34 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:32:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:32:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:32:35 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
-2020-07-14 23:32:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:32:35 Thread[AWT-EventQueue-0,6,main] 成功加载首页
-2020-07-14 23:32:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
-2020-07-14 23:32:35 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
-2020-07-14 23:32:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
-2020-07-14 23:32:37 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-15 00:09:12 Thread[AWT-EventQueue-0,6,main] devlog.txt 文件内容已清空！
+2020-07-15 00:09:12 Thread[AWT-EventQueue-0,6,main] deverror.txt 文件内容已清空！
+2020-07-15 00:09:12 Thread[AWT-EventQueue-0,6,main] 缓存清理完毕！
+2020-07-15 00:09:16 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-15 00:09:16 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-15 00:09:16 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-15 00:09:16 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-15 00:09:16 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-15 00:09:17 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-15 00:09:17 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-15 00:09:18 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-15 00:59:41 Thread[main,5,main] 成功加载登录界面
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+MV
+Love Story
+Taylor Swift
+Fearless (Platinum Edition)
+03:56
+展开
+
+
+
+
+
+
+
+
+
+Love Story (Live From Clear Channel Stripped 2008)
+Taylor Swift
+Big Machine Live!
+03:41
+展开
+
+Love story (Live)
+惪贰火羊
+00:32
+Love Story (抖音完整版)
+酉阳田禹
+红人馆馆长
+04:01
+Love Story
+Billy Vaughn
+Soft and Tenderly
+02:02
+展开
+
+
+
+
+
+
+
+
+
+Love Story
+苏天伦
+I Got Love
+03:41
+love story (原唱: Taylor Swift)
+小石头和孩子们
+小石头和孩子们的歌单
+03:59
+Love Story
+Taylor Swift Tribute Band
+World's Greatest Valentines Day Love Songs - The Only Love Album You'll Ever Need (Deluxe Version)
+03:54
+展开
+
+
+Love Story (DJ弹鼓版)
+浪子康 / 豪大大
+你是我所有的梦
+01:48
+Love story (Live)
+Shirley林
+00:34
+9
+31
+31
+MV
+Love Story
+
+
+
+
+
+
+
+
+
+Love Story (Live From Clear Channel Stripped 2008)
+
+Love story (Live)
+Love Story (抖音完整版)
+Love Story
+
+
+
+
+
+
+
+
+
+Love Story
+love story (原唱: Taylor Swift)
+Love Story
+
+
+Love Story (DJ弹鼓版)
+Love story (Live)
+9
+9
+9
+9
+9
+9
+9
+31
+Love Story
+
+
+
+
+
+
+
+
+
+Love Story (Live From Clear Channel Stripped 2008)
+
+Love story (Live)
+Love Story (抖音完整版)
+Love Story
+
+
+
+
+
+
+
+
+
+Love Story
+love story (原唱: Taylor Swift)
+Love Story
+
+
+Love Story (DJ弹鼓版)
+Love story (Live)
+2020-07-16 15:35:37 Thread[main,5,main] 成功加载登录界面
+2020-07-16 15:35:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:35:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:35:43 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:35:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:35:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:35:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:35:44 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:35:44 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:35:44 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:35:44 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:35:44 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:35:44 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:35:44 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:35:44 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:35:46 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:35:46 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:35:46 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:35:46 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:35:46 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:35:46 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:35:46 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:36:36 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:36:36 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:36:36 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:36:36 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:36:36 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:36:37 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:36:37 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:36:38 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:42:31 Thread[main,5,main] 成功加载登录界面
+2020-07-16 15:42:33 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面
+2020-07-16 15:42:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:42:35 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:42:36 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:42:36 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:42:36 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:42:36 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:42:36 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:44:01 Thread[main,5,main] 成功加载登录界面
+2020-07-16 15:44:04 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面
+2020-07-16 15:44:07 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:44:12 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:12 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:12 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:13 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:44:14 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:15 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:15 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:15 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:15 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:15 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:16 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:16 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面
+2020-07-16 15:44:16 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:16 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:17 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:17 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:17 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:17 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:17 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:44:17 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:44:29 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:29 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:29 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:30 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:44:31 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:32 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:44:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:38 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:44:38 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:39 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:39 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:39 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:44:39 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:39 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:44:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:44 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:44 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:44 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:44 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:44 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:44 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:44 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面
+2020-07-16 15:44:45 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:45 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:45 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:45 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:44:45 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:44:46 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:44:46 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:44:46 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:45:28 Thread[main,5,main] 成功加载登录界面
+2020-07-16 15:45:32 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面
+2020-07-16 15:45:46 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:45:51 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:45:52 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:45:55 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:45:55 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:45:55 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:45:55 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:45:55 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:45:55 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:45:55 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=1
+2020-07-16 15:46:00 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:00 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:00 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:00 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:00 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:00 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:00 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:46:00 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:46:27 Thread[main,5,main] 成功加载登录界面
+2020-07-16 15:46:33 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:33 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:33 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:46:33 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:33 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:33 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:34 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:34 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:34 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:34 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:34 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:46:34 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:34 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:46:34 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:35 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:35 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:35 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=1
+2020-07-16 15:46:37 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:46:47 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面
+2020-07-16 15:46:48 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:48 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:48 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:48 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:48 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:48 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:48 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:46:48 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:46:53 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:53 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:53 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:46:54 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:57 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:57 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:57 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:57 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:46:57 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:46:57 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:46:57 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=1
+2020-07-16 15:46:59 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:47:33 Thread[main,5,main] 成功加载登录界面
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:39 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:47:39 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:39 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:47:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:40 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:40 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:40 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:40 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:40 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:40 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:40 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=1
+2020-07-16 15:47:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:43 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:43 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:47:43 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:47:50 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:50 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:50 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:51 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:47:52 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:55 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:55 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=1
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:47:56 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:47:57 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:47:57 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:47:57 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面
+2020-07-16 15:48:25 Thread[main,5,main] 成功加载登录界面
+2020-07-16 15:48:31 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:48:31 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:48:31 Thread[AWT-EventQueue-0,6,main] 成功调用一次加密操作
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 15:48:32 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:48:37 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:48:37 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:48:37 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:48:37 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:48:37 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:48:37 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:48:37 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=1
+2020-07-16 15:48:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:48:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:48:38 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:48:38 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 15:48:38 Thread[AWT-EventQueue-0,6,main] 一次select语句执行成功
+2020-07-16 15:48:38 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 15:48:38 Thread[AWT-EventQueue-0,6,main] 成功加载首页
+2020-07-16 16:53:26 Thread[main,5,main] 成功加载登录界面
+2020-07-16 16:53:30 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 16:53:41 Thread[AWT-EventQueue-0,6,main] 当前爬取 OTH_M 首字母 A
+2020-07-16 16:53:41 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=0&area=6&page=1&index=1&
+2020-07-16 16:53:47 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:53:47 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001CcJzk1Xysrh.html#stat=y_new.singerlist.singername
+2020-07-16 16:53:47 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:53:49 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:53:49 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003pvdOv1JVlOe.html#stat=y_new.singerlist.singername
+2020-07-16 16:53:49 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:53:51 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:53:51 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003iGuDp0Wz925.html#stat=y_new.singerlist.singername
+2020-07-16 16:53:51 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:53:54 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:53:54 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001yS2cz0DQMAG.html#stat=y_new.singerlist.singername
+2020-07-16 16:53:54 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:53:56 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:53:56 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0031pY0V3moPYt.html#stat=y_new.singerlist.singername
+2020-07-16 16:53:56 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:53:58 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:53:58 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001AF5iC0yaKWv.html#stat=y_new.singerlist.singername
+2020-07-16 16:53:58 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:54:00 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:54:00 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003DNI7f2qZAgl.html#stat=y_new.singerlist.singername
+2020-07-16 16:54:00 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:54:02 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:54:02 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001WjJwJ3fb6VU.html#stat=y_new.singerlist.singername
+2020-07-16 16:54:02 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:54:59 Thread[main,5,main] 成功加载登录界面
+2020-07-16 16:55:02 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 16:55:10 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_M 首字母 A
+2020-07-16 16:55:10 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=0&area=4&page=1&index=1&
+2020-07-16 16:55:16 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:55:16 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0022WH7g1NNnyY.html#stat=y_new.singerlist.singername
+2020-07-16 16:55:16 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:55:16 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:55:16 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:55:18 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:55:18 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004V09np3I1z0u.html#stat=y_new.singerlist.singername
+2020-07-16 16:55:18 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:55:18 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:55:18 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:55:20 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:55:20 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004acRXK3WfG3a.html#stat=y_new.singerlist.singername
+2020-07-16 16:55:20 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:55:20 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:55:20 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:55:22 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:55:22 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002VVIPX3tl6lj.html#stat=y_new.singerlist.singername
+2020-07-16 16:55:22 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:55:22 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:55:22 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:57:42 Thread[main,5,main] 成功加载登录界面
+2020-07-16 16:57:45 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 16:57:52 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_M 首字母 A
+2020-07-16 16:57:52 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=0&area=4&page=1&index=1&
+2020-07-16 16:57:58 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:57:58 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0022WH7g1NNnyY.html#stat=y_new.singerlist.singername
+2020-07-16 16:57:58 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:57:58 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:57:58 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:57:58 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:58:00 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:58:00 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004V09np3I1z0u.html#stat=y_new.singerlist.singername
+2020-07-16 16:58:00 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:58:00 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:58:00 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:58:00 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:58:02 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:58:02 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004acRXK3WfG3a.html#stat=y_new.singerlist.singername
+2020-07-16 16:58:02 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:58:02 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:58:02 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:58:02 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:58:05 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:58:05 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002VVIPX3tl6lj.html#stat=y_new.singerlist.singername
+2020-07-16 16:58:05 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:58:05 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:58:05 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:58:05 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:59:19 Thread[main,5,main] 成功加载登录界面
+2020-07-16 16:59:21 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 16:59:27 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_F 首字母 A
+2020-07-16 16:59:27 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=1&area=4&page=1&index=1&
+2020-07-16 16:59:32 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:59:32 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003rWW212j4dfv.html#stat=y_new.singerlist.singername
+2020-07-16 16:59:33 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:59:33 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:59:33 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:59:33 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:59:35 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:59:35 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002ZwrKF3IFGtg.html#stat=y_new.singerlist.singername
+2020-07-16 16:59:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:59:35 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:59:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:59:35 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:59:37 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:59:37 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001gXI6J461sRa.html#stat=y_new.singerlist.singername
+2020-07-16 16:59:37 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:59:37 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:59:37 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:59:37 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:59:39 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:59:39 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004VGjB70v2Mmf.html#stat=y_new.singerlist.singername
+2020-07-16 16:59:39 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:59:39 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:59:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:59:39 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 16:59:41 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 16:59:41 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003Vb4tO0SK7ZC.html#stat=y_new.singerlist.singername
+2020-07-16 16:59:41 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 16:59:41 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 16:59:41 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 16:59:41 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:00:06 Thread[main,5,main] 成功加载登录界面
+2020-07-16 17:00:09 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 17:00:14 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_F 首字母 G
+2020-07-16 17:00:14 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=1&area=4&page=1&index=7&
+2020-07-16 17:00:20 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:00:20 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003O98QM0y5DTB.html#stat=y_new.singerlist.singername
+2020-07-16 17:00:20 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:00:20 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:00:20 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:00:20 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:00:22 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:00:22 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001Qqf8u3fHs8E.html#stat=y_new.singerlist.singername
+2020-07-16 17:00:22 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:00:22 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:00:22 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:00:22 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:00:24 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:00:24 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001JDB7g4WwvYu.html#stat=y_new.singerlist.singername
+2020-07-16 17:00:24 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:00:24 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:00:24 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:00:24 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:00:27 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:00:27 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0041agkx1syuNQ.html#stat=y_new.singerlist.singername
+2020-07-16 17:00:27 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:00:27 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:00:27 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:00:27 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:00:29 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:00:29 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0010Gpj10bRtZV.html#stat=y_new.singerlist.singername
+2020-07-16 17:00:29 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:00:29 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:00:29 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:00:29 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:00:31 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:00:31 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003X6VQM2Fzh31.html#stat=y_new.singerlist.singername
+2020-07-16 17:00:31 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:00:31 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:00:31 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:00:31 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:00:33 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:00:33 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003xXvcl0G82xN.html#stat=y_new.singerlist.singername
+2020-07-16 17:00:33 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:00:33 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:00:33 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:00:33 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:00:35 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:00:35 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001pNKOF2jkXD9.html#stat=y_new.singerlist.singername
+2020-07-16 17:00:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:00:35 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:00:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:00:35 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:02:19 Thread[main,5,main] 成功加载登录界面
+2020-07-16 17:02:21 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 17:02:29 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_G 首字母 A
+2020-07-16 17:02:29 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&
+2020-07-16 17:02:35 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:02:35 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000Gtvvm4JyP8x.html#stat=y_new.singerlist.singername
+2020-07-16 17:02:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:02:35 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:02:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:02:35 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:02:37 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:02:37 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002wACCT3R0jAz.html#stat=y_new.singerlist.singername
+2020-07-16 17:02:37 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:02:37 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:02:37 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:02:37 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:02:52 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:02:52 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001r3Qvr3smdQW.html#stat=y_new.singerlist.singername
+2020-07-16 17:02:52 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:02:52 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:02:52 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:02:52 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:02:54 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:02:54 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000gEeDf0gJ79a.html#stat=y_new.singerlist.singername
+2020-07-16 17:02:54 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:02:54 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:02:54 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:02:54 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:02:56 Thread[AWT-EventQueue-0,6,main] 歌手名:
+2020-07-16 17:02:56 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002nRYrv04Kqdp.html#stat=y_new.singerlist.singername
+2020-07-16 17:02:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:02:56 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:02:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:02:56 Thread[AWT-EventQueue-0,6,main] 数据插入成功
+2020-07-16 17:04:17 Thread[main,5,main] 成功加载登录界面
+2020-07-16 17:04:20 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 17:04:26 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_G 首字母 A
+2020-07-16 17:04:26 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&
+2020-07-16 17:04:31 Thread[AWT-EventQueue-0,6,main] 歌手名:AAA (トリプル・エー)
+2020-07-16 17:04:31 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000Gtvvm4JyP8x.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:31 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:31 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:31 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:31 Thread[AWT-EventQueue-0,6,main] AAA (トリプル・エー)数据插入成功
+2020-07-16 17:04:33 Thread[AWT-EventQueue-0,6,main] 歌手名:Access (アクセス)
+2020-07-16 17:04:33 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002wACCT3R0jAz.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:33 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:33 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:33 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:33 Thread[AWT-EventQueue-0,6,main] Access (アクセス)数据插入成功
+2020-07-16 17:04:35 Thread[AWT-EventQueue-0,6,main] 歌手名:Aice5
+2020-07-16 17:04:35 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001r3Qvr3smdQW.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:35 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:35 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:35 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:35 Thread[AWT-EventQueue-0,6,main] Aice5数据插入成功
+2020-07-16 17:04:37 Thread[AWT-EventQueue-0,6,main] 歌手名:AKB48
+2020-07-16 17:04:37 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000gEeDf0gJ79a.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:37 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:37 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:37 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:37 Thread[AWT-EventQueue-0,6,main] AKB48数据插入成功
+2020-07-16 17:04:39 Thread[AWT-EventQueue-0,6,main] 歌手名:ALI PROJECT (アリ・プロジェクト)
+2020-07-16 17:04:39 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002nRYrv04Kqdp.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:39 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:39 Thread[AWT-EventQueue-0,6,main] ALI PROJECT (アリ・プロジェクト)数据插入成功
+2020-07-16 17:04:42 Thread[AWT-EventQueue-0,6,main] 歌手名:ALLY & DIAZ
+2020-07-16 17:04:42 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0002hvng2nJO0v.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:42 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:42 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:42 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:42 Thread[AWT-EventQueue-0,6,main] ALLY & DIAZ数据插入成功
+2020-07-16 17:04:44 Thread[AWT-EventQueue-0,6,main] 歌手名:ALTIMA (アルティマ)
+2020-07-16 17:04:44 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001q4V4n1mZwNt.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:44 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:44 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:44 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:44 Thread[AWT-EventQueue-0,6,main] ALTIMA (アルティマ)数据插入成功
+2020-07-16 17:04:46 Thread[AWT-EventQueue-0,6,main] 歌手名:Aluto
+2020-07-16 17:04:46 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0045qcif0SEl9m.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:46 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:46 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:46 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:46 Thread[AWT-EventQueue-0,6,main] Aluto数据插入成功
+2020-07-16 17:04:48 Thread[AWT-EventQueue-0,6,main] 歌手名:amazarashi (アマザラシ)
+2020-07-16 17:04:48 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0012uUva3UgNEG.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:48 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:48 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:48 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:48 Thread[AWT-EventQueue-0,6,main] amazarashi (アマザラシ)数据插入成功
+2020-07-16 17:04:50 Thread[AWT-EventQueue-0,6,main] 歌手名:androp (アンドロップ)
+2020-07-16 17:04:50 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004ZmcFz0dWmop.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:50 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:50 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:50 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:50 Thread[AWT-EventQueue-0,6,main] androp (アンドロップ)数据插入成功
+2020-07-16 17:04:52 Thread[AWT-EventQueue-0,6,main] 歌手名:angela (アンジェラ)
+2020-07-16 17:04:52 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000oEvjV2FuRnP.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:52 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:52 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:52 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:52 Thread[AWT-EventQueue-0,6,main] angela (アンジェラ)数据插入成功
+2020-07-16 17:04:54 Thread[AWT-EventQueue-0,6,main] 歌手名:Aqua Timez (アクア タイムズ)
+2020-07-16 17:04:54 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001z1uNG14lNi7.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:54 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:54 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:54 Thread[AWT-EventQueue-0,6,main] Aqua Timez (アクア タイムズ)数据插入成功
+2020-07-16 17:04:56 Thread[AWT-EventQueue-0,6,main] 歌手名:Arp
+2020-07-16 17:04:56 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002Ql4bO1rAEKZ.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:56 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:04:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:56 Thread[AWT-EventQueue-0,6,main] Arp数据插入成功
+2020-07-16 17:04:58 Thread[AWT-EventQueue-0,6,main] 歌手名:Asia Engineer (エイジアエンジニア)
+2020-07-16 17:04:58 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000zr0cl4Z3bPi.html#stat=y_new.singerlist.singername
+2020-07-16 17:04:58 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:04:58 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:04:58 Thread[AWT-EventQueue-0,6,main] Asia Engineer (エイジアエンジニア)数据插入成功
+2020-07-16 17:05:00 Thread[AWT-EventQueue-0,6,main] 歌手名:ASIAN KUNG-FU GENERATION (亚洲功夫小子)
+2020-07-16 17:05:00 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004CY5el0Sce5I.html#stat=y_new.singerlist.singername
+2020-07-16 17:05:00 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:05:00 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:05:00 Thread[AWT-EventQueue-0,6,main] ASIAN KUNG-FU GENERATION (亚洲功夫小子)数据插入成功
+2020-07-16 17:05:02 Thread[AWT-EventQueue-0,6,main] 当前已经是JPN_G A 最后一页
+{name=AAA (トリプル・エー), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=Access (アクセス), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=Aice5, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=AKB48, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=ALI PROJECT (アリ・プロジェクト), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=ALLY & DIAZ, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=ALTIMA (アルティマ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=Aluto, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=amazarashi (アマザラシ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=androp (アンドロップ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=angela (アンジェラ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=Aqua Timez (アクア タイムズ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=Arp, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=Asia Engineer (エイジアエンジニア), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+{name=ASIAN KUNG-FU GENERATION (亚洲功夫小子), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=1&}
+2020-07-16 17:05:57 Thread[main,5,main] 成功加载登录界面
+2020-07-16 17:06:00 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 17:06:05 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_G 首字母 K
+2020-07-16 17:06:05 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=11&
+2020-07-16 17:06:11 Thread[AWT-EventQueue-0,6,main] 歌手名:Kagrra (カグラ;Kagrra;神楽)
+2020-07-16 17:06:11 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000X5XN23QdG2P.html#stat=y_new.singerlist.singername
+2020-07-16 17:06:11 Thread[AWT-EventQueue-0,6,main] Kagrra (カグラ;Kagrra;神楽)数据插入成功
+2020-07-16 17:06:13 Thread[AWT-EventQueue-0,6,main] 歌手名:Kalafina (カラフィナ)
+2020-07-16 17:06:13 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003aDaHd3k8xKe.html#stat=y_new.singerlist.singername
+2020-07-16 17:06:13 Thread[AWT-EventQueue-0,6,main] Kalafina (カラフィナ)数据插入成功
+2020-07-16 17:06:15 Thread[AWT-EventQueue-0,6,main] 歌手名:KANA-BOON (カナブーン)
+2020-07-16 17:06:15 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/00351BYe1PBdd8.html#stat=y_new.singerlist.singername
+2020-07-16 17:06:15 Thread[AWT-EventQueue-0,6,main] KANA-BOON (カナブーン)数据插入成功
+2020-07-16 17:06:42 Thread[main,5,main] 成功加载登录界面
+2020-07-16 17:06:44 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 17:06:48 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_G 首字母 D
+2020-07-16 17:06:48 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&
+2020-07-16 17:06:54 Thread[AWT-EventQueue-0,6,main] 歌手名:D'espairsRay
+2020-07-16 17:06:54 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002tZuMp1QGJmC.html#stat=y_new.singerlist.singername
+2020-07-16 17:06:55 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:06:55 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:06:55 Thread[AWT-EventQueue-0,6,main] D'espairsRay数据插入成功
+2020-07-16 17:06:57 Thread[AWT-EventQueue-0,6,main] 歌手名:D-51
+2020-07-16 17:06:57 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002HdBwS1zfbvo.html#stat=y_new.singerlist.singername
+2020-07-16 17:06:57 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:06:57 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:06:57 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:06:57 Thread[AWT-EventQueue-0,6,main] D-51数据插入成功
+2020-07-16 17:06:59 Thread[AWT-EventQueue-0,6,main] 歌手名:Date of Birth
+2020-07-16 17:06:59 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0047Oakf1mTqJp.html#stat=y_new.singerlist.singername
+2020-07-16 17:06:59 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:06:59 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:06:59 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:06:59 Thread[AWT-EventQueue-0,6,main] Date of Birth数据插入成功
+2020-07-16 17:07:01 Thread[AWT-EventQueue-0,6,main] 歌手名:Day After Tomorrow
+2020-07-16 17:07:01 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000zWT2R2onOsK.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:01 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:01 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:01 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:01 Thread[AWT-EventQueue-0,6,main] Day After Tomorrow数据插入成功
+2020-07-16 17:07:03 Thread[AWT-EventQueue-0,6,main] 歌手名:DAZZLE 4 LIFE
+2020-07-16 17:07:03 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002T0ZkG0tDIA6.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:03 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:03 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:03 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:03 Thread[AWT-EventQueue-0,6,main] DAZZLE 4 LIFE数据插入成功
+2020-07-16 17:07:05 Thread[AWT-EventQueue-0,6,main] 歌手名:DEEN
+2020-07-16 17:07:05 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000MVeMo3nIqb5.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:05 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:05 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:05 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:05 Thread[AWT-EventQueue-0,6,main] DEEN数据插入成功
+2020-07-16 17:07:07 Thread[AWT-EventQueue-0,6,main] 歌手名:Depapepe (デパペペ)
+2020-07-16 17:07:07 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004RmeWI2NQHH1.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:07 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:07 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:07 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:07 Thread[AWT-EventQueue-0,6,main] Depapepe (デパペペ)数据插入成功
+2020-07-16 17:07:09 Thread[AWT-EventQueue-0,6,main] 歌手名:Dir En Grey (灰色银币)
+2020-07-16 17:07:09 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003UKIxW30w2ew.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:09 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:09 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:09 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:09 Thread[AWT-EventQueue-0,6,main] Dir En Grey (灰色银币)数据插入成功
+2020-07-16 17:07:11 Thread[AWT-EventQueue-0,6,main] 歌手名:Do As Infinity (大无限乐团)
+2020-07-16 17:07:11 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0038q0Yu1LV8Ia.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:11 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:11 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:11 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:11 Thread[AWT-EventQueue-0,6,main] Do As Infinity (大无限乐团)数据插入成功
+2020-07-16 17:07:13 Thread[AWT-EventQueue-0,6,main] 歌手名:doa
+2020-07-16 17:07:13 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003OJE7E2N24gf.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:13 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:13 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:13 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:13 Thread[AWT-EventQueue-0,6,main] doa数据插入成功
+2020-07-16 17:07:15 Thread[AWT-EventQueue-0,6,main] 歌手名:DOES (ドーズ)
+2020-07-16 17:07:15 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0027drep4eBm3K.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:15 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:15 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:15 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:15 Thread[AWT-EventQueue-0,6,main] DOES (ドーズ)数据插入成功
+2020-07-16 17:07:17 Thread[AWT-EventQueue-0,6,main] 歌手名:Dragon Ash (龙骨乐队)
+2020-07-16 17:07:17 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003MblgN1WL1Fs.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:17 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:17 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:17 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:17 Thread[AWT-EventQueue-0,6,main] Dragon Ash (龙骨乐队)数据插入成功
+2020-07-16 17:07:19 Thread[AWT-EventQueue-0,6,main] 歌手名:DREAMS COME TRUE (美梦成真)
+2020-07-16 17:07:19 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002EAfOy4NGyH4.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:19 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:19 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:19 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:19 Thread[AWT-EventQueue-0,6,main] DREAMS COME TRUE (美梦成真)数据插入成功
+2020-07-16 17:07:21 Thread[AWT-EventQueue-0,6,main] 歌手名:独门嘻哈客
+2020-07-16 17:07:21 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002bMxH53jwtxj.html#stat=y_new.singerlist.singername
+2020-07-16 17:07:21 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:07:21 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:07:21 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:07:21 Thread[AWT-EventQueue-0,6,main] 独门嘻哈客数据插入成功
+2020-07-16 17:07:24 Thread[AWT-EventQueue-0,6,main] 当前已经是JPN_G D 最后一页
+{name=D'espairsRay, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=D-51, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=Date of Birth, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=Day After Tomorrow, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=DAZZLE 4 LIFE, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=DEEN, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=Depapepe (デパペペ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=Dir En Grey (灰色银币), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=Do As Infinity (大无限乐团), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=doa, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=DOES (ドーズ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=Dragon Ash (龙骨乐队), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=DREAMS COME TRUE (美梦成真), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+{name=独门嘻哈客, url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=4&}
+2020-07-16 17:15:30 Thread[main,5,main] 成功加载登录界面
+2020-07-16 17:15:33 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 17:15:38 Thread[AWT-EventQueue-0,6,main] 当前爬取 AME_M 首字母 Y
+2020-07-16 17:15:38 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=0&area=5&page=1&index=25&
+2020-07-16 17:15:43 Thread[AWT-EventQueue-0,6,main] 歌手名:尤金约胡姆
+2020-07-16 17:15:43 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001AJwqR3j3Iv1.html#stat=y_new.singerlist.singername
+2020-07-16 17:15:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:15:43 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:15:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:15:43 Thread[AWT-EventQueue-0,6,main] 尤金约胡姆数据插入成功
+2020-07-16 17:15:45 Thread[AWT-EventQueue-0,6,main] 歌手名:约翰梅耶尔
+2020-07-16 17:15:45 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004DfetY0OZ1A1.html#stat=y_new.singerlist.singername
+2020-07-16 17:15:46 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:15:46 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:15:46 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:15:46 Thread[AWT-EventQueue-0,6,main] 约翰梅耶尔数据插入成功
+2020-07-16 17:15:48 Thread[AWT-EventQueue-0,6,main] 歌手名:Yehudi Menuhin (耶胡迪·梅纽因)
+2020-07-16 17:15:48 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003dTkh32lOWVx.html#stat=y_new.singerlist.singername
+2020-07-16 17:15:48 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:15:48 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:15:48 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:15:48 Thread[AWT-EventQueue-0,6,main] Yehudi Menuhin (耶胡迪·梅纽因)数据插入成功
+2020-07-16 17:15:50 Thread[AWT-EventQueue-0,6,main] 歌手名:Y.S. Yesir
+2020-07-16 17:15:50 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003CS11q4OGvu4.html#stat=y_new.singerlist.singername
+2020-07-16 17:15:50 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:15:50 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:15:50 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:15:50 Thread[AWT-EventQueue-0,6,main] Y.S. Yesir数据插入成功
+2020-07-16 17:15:52 Thread[AWT-EventQueue-0,6,main] 歌手名:Yann Tiersen (扬·提尔森)
+2020-07-16 17:15:52 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000O87UN2mQsvw.html#stat=y_new.singerlist.singername
+2020-07-16 17:15:52 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:15:52 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:15:52 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:15:52 Thread[AWT-EventQueue-0,6,main] Yann Tiersen (扬·提尔森)数据插入成功
+2020-07-16 17:15:54 Thread[AWT-EventQueue-0,6,main] 歌手名:YahZarah
+2020-07-16 17:15:54 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000xGL0s0sZNGu.html#stat=y_new.singerlist.singername
+2020-07-16 17:15:54 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:15:54 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:15:54 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:15:54 Thread[AWT-EventQueue-0,6,main] YahZarah数据插入成功
+2020-07-16 17:15:56 Thread[AWT-EventQueue-0,6,main] 歌手名:Yakup Elçi
+2020-07-16 17:15:56 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001lNiZW49nvYk.html#stat=y_new.singerlist.singername
+2020-07-16 17:15:56 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:15:56 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:15:56 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:15:56 Thread[AWT-EventQueue-0,6,main] Yakup Elçi数据插入成功
+2020-07-16 17:19:18 Thread[main,5,main] 成功加载登录界面
+2020-07-16 17:19:22 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 17:19:26 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_G 首字母 F
+2020-07-16 17:19:26 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=6&
+2020-07-16 17:19:32 Thread[AWT-EventQueue-0,6,main] 歌手名:Falcom Sound Team J.D.K. (ふぁるこむ・さうんどちーむ・じぇいでぃーけい)
+2020-07-16 17:19:32 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0007JPMw2fpEpN.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:32 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:32 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:32 Thread[AWT-EventQueue-0,6,main] Falcom Sound Team J.D.K. (ふぁるこむ・さうんどちーむ・じぇいでぃーけい)数据插入成功
+2020-07-16 17:19:34 Thread[AWT-EventQueue-0,6,main] 歌手名:范姜明月@涉谷纵横
+2020-07-16 17:19:34 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002V9jJo1glKsX.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:34 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:34 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:34 Thread[AWT-EventQueue-0,6,main] 范姜明月@涉谷纵横数据插入成功
+2020-07-16 17:19:36 Thread[AWT-EventQueue-0,6,main] 歌手名:Fear, and Loathing in Las Vegas (恐惧，拉斯维加斯)
+2020-07-16 17:19:36 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0007t8HU2nDa0m.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:36 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:36 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:36 Thread[AWT-EventQueue-0,6,main] Fear, and Loathing in Las Vegas (恐惧，拉斯维加斯)数据插入成功
+2020-07-16 17:19:39 Thread[AWT-EventQueue-0,6,main] 歌手名:风间三姉妹
+2020-07-16 17:19:39 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002vzFwX04c0tA.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:39 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:39 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:39 Thread[AWT-EventQueue-0,6,main] 风间三姉妹数据插入成功
+2020-07-16 17:19:41 Thread[AWT-EventQueue-0,6,main] 歌手名:風味堂 (Fu Mi Do)
+2020-07-16 17:19:41 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/000Wr5bA22AeLa.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:41 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:41 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:41 Thread[AWT-EventQueue-0,6,main] 風味堂 (Fu Mi Do)数据插入成功
+2020-07-16 17:19:43 Thread[AWT-EventQueue-0,6,main] 歌手名:fhána (ファナ)
+2020-07-16 17:19:43 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/00155qJL2Ujczp.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:43 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:43 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:43 Thread[AWT-EventQueue-0,6,main] fhána (ファナ)数据插入成功
+2020-07-16 17:19:45 Thread[AWT-EventQueue-0,6,main] 歌手名:Field of View
+2020-07-16 17:19:45 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004I8Bio03YL6F.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:45 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:45 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:45 Thread[AWT-EventQueue-0,6,main] Field of View数据插入成功
+2020-07-16 17:19:47 Thread[AWT-EventQueue-0,6,main] 歌手名:FLAME
+2020-07-16 17:19:47 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004ahS6e1E4rpl.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:47 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:47 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:47 Thread[AWT-EventQueue-0,6,main] FLAME数据插入成功
+2020-07-16 17:19:49 Thread[AWT-EventQueue-0,6,main] 歌手名:flex life
+2020-07-16 17:19:49 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0025AtCd1gTfgH.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:49 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:49 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:49 Thread[AWT-EventQueue-0,6,main] flex life数据插入成功
+2020-07-16 17:19:51 Thread[AWT-EventQueue-0,6,main] 歌手名:FLOW (フロウ)
+2020-07-16 17:19:51 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003PKmhq2MZyUY.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:51 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:51 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:51 Thread[AWT-EventQueue-0,6,main] FLOW (フロウ)数据插入成功
+2020-07-16 17:19:53 Thread[AWT-EventQueue-0,6,main] 歌手名:Flower (フラワー)
+2020-07-16 17:19:53 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003pp5253P1mUF.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:53 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:53 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:53 Thread[AWT-EventQueue-0,6,main] Flower (フラワー)数据插入成功
+2020-07-16 17:19:55 Thread[AWT-EventQueue-0,6,main] 歌手名:flumpool (凡人谱)
+2020-07-16 17:19:55 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/003mK6E22b8JDO.html#stat=y_new.singerlist.singername
+2020-07-16 17:19:55 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:19:55 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:19:55 Thread[AWT-EventQueue-0,6,main] flumpool (凡人谱)数据插入成功
+2020-07-16 17:20:09 Thread[main,5,main] 成功加载登录界面
+2020-07-16 17:20:14 Thread[AWT-EventQueue-0,6,main] 成功加载在线检索歌手界面 id=0
+2020-07-16 17:20:20 Thread[AWT-EventQueue-0,6,main] 当前爬取 JPN_G 首字母 Z
+2020-07-16 17:20:20 Thread[AWT-EventQueue-0,6,main] 爬取url:https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=26&
+2020-07-16 17:20:26 Thread[AWT-EventQueue-0,6,main] 歌手名:ZARD (ザード)
+2020-07-16 17:20:26 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004P4J0D0bAzf3.html#stat=y_new.singerlist.singername
+2020-07-16 17:20:26 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:20:26 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:20:26 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:20:26 Thread[AWT-EventQueue-0,6,main] ZARD (ザード)数据插入成功
+2020-07-16 17:20:28 Thread[AWT-EventQueue-0,6,main] 歌手名:竹內順子 (たけうち じゅんこ)
+2020-07-16 17:20:28 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/001Qtk3I02q5j0.html#stat=y_new.singerlist.singername
+2020-07-16 17:20:28 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:20:28 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:20:28 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:20:28 Thread[AWT-EventQueue-0,6,main] 竹內順子 (たけうち じゅんこ)数据插入成功
+2020-07-16 17:20:30 Thread[AWT-EventQueue-0,6,main] 歌手名:ZIGGY (ジギー)
+2020-07-16 17:20:30 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/0044RlTV3sWz6V.html#stat=y_new.singerlist.singername
+2020-07-16 17:20:30 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:20:30 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:20:30 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:20:30 Thread[AWT-EventQueue-0,6,main] ZIGGY (ジギー)数据插入成功
+2020-07-16 17:20:32 Thread[AWT-EventQueue-0,6,main] 歌手名:ZONE (ゾーン)
+2020-07-16 17:20:32 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/002SP6Ec1PxgHX.html#stat=y_new.singerlist.singername
+2020-07-16 17:20:32 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:20:32 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:20:32 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:20:32 Thread[AWT-EventQueue-0,6,main] ZONE (ゾーン)数据插入成功
+2020-07-16 17:20:34 Thread[AWT-EventQueue-0,6,main] 歌手名:ZYYG (じーぐ)
+2020-07-16 17:20:34 Thread[AWT-EventQueue-0,6,main] 歌手url:https://y.qq.com/n/yqq/singer/004S1ai41xhYUI.html#stat=y_new.singerlist.singername
+2020-07-16 17:20:34 Thread[AWT-EventQueue-0,6,main] 数据库连接成功
+2020-07-16 17:20:34 Thread[AWT-EventQueue-0,6,main] 一次sql语句执行成功(DDL/insert/delete/update)
+2020-07-16 17:20:34 Thread[AWT-EventQueue-0,6,main] 数据库关闭成功
+2020-07-16 17:20:34 Thread[AWT-EventQueue-0,6,main] ZYYG (じーぐ)数据插入成功
+2020-07-16 17:20:37 Thread[AWT-EventQueue-0,6,main] 当前已经是JPN_G Z 最后一页
+{name=ZARD (ザード), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=26&}
+{name=竹內順子 (たけうち じゅんこ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=26&}
+{name=ZIGGY (ジギー), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=26&}
+{name=ZONE (ゾーン), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=26&}
+{name=ZYYG (じーぐ), url=https://y.qq.com/portal/singer_list.html#genre=-100&sex=2&area=4&page=1&index=26&}
+2020-07-16 17:20:48 Thread[AWT-EventQueue-0,6,main] 成功加载登录界面

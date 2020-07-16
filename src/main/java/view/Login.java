@@ -163,6 +163,12 @@ public class Login {
 		onlinePanel.add(onlineLabel);
 		
 		JButton onlineSingerButton = new JButton("歌手");
+		onlineSingerButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new OnlineSingerIndex(0, frame).getContentJPanel());
+			}
+		});
 		onlineSingerButton.setForeground(new Color(105, 105, 105));
 		onlineSingerButton.setHorizontalAlignment(SwingConstants.LEFT);
 		onlineSingerButton.setBorderPainted(false);

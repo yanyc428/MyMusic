@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.FlowLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
@@ -18,6 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
+import dao.database.UsersTableActions;
 import utils.Log;
 import javax.swing.JTextPane;
 import javax.swing.JScrollPane;
@@ -140,6 +142,12 @@ public class Logview {
 		onlinePanel.add(onlineLabel);
 		
 		JButton onlineSingerButton = new JButton("歌手");
+		onlineSingerButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new OnlineSingerIndex(id, frame).getContentJPanel());
+			}
+		});
 		onlineSingerButton.setForeground(new Color(105, 105, 105));
 		onlineSingerButton.setHorizontalAlignment(SwingConstants.LEFT);
 		onlineSingerButton.setBorderPainted(false);
@@ -206,13 +214,19 @@ public class Logview {
 		mainHeadMenuBarPanel.setBackground(new Color(255, 255, 255));
 		mainPanel.add(mainHeadMenuBarPanel, BorderLayout.NORTH);
 		
-		JButton backToIndexButton = new JButton("返回首页");
-		backToIndexButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				frame.getContentPane().setVisible(false);
-                frame.setContentPane(new Index(id, frame).getContentJPanel());
-			}
-		});
+		JLabel usr_label = new JLabel("用户名");
+		usr_label.setHorizontalAlignment(SwingConstants.RIGHT);
+		usr_label.setMaximumSize(new Dimension(180, 30));
+		usr_label.setMinimumSize(new Dimension(120, 30));
+		usr_label.setPreferredSize(new Dimension(120, 30));
+		usr_label.setForeground(new Color(105, 105, 105));
+		ImageIcon icon = new ImageIcon(dir + UsersTableActions.getAvatar(id));
+		icon.setImage(icon.getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT));
+        usr_label.setIcon(icon);
+        usr_label.setText(UsersTableActions.getName(id));
+		mainHeadMenuBarPanel.add(usr_label);
+		
+		
 		
 		JButton errorButton = new JButton("错误日志");
 		errorButton.addActionListener(new ActionListener() {
@@ -269,6 +283,14 @@ public class Logview {
 		logButton.setForeground(new Color(105, 105, 105));
 		logButton.setBorderPainted(false);
 		mainHeadMenuBarPanel.add(logButton);
+		
+		JButton backToIndexButton = new JButton("返回首页");
+		backToIndexButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+                frame.setContentPane(new Index(id, frame).getContentJPanel());
+			}
+		});
 		backToIndexButton.setPreferredSize(new Dimension(120, 30));
 		backToIndexButton.setMinimumSize(new Dimension(120, 30));
 		backToIndexButton.setMaximumSize(new Dimension(120, 30));

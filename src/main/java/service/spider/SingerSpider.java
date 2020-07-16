@@ -3,6 +3,8 @@ package service.spider;
 import enumItem.Area;
 import enumItem.Browser;
 import enumItem.Letter;
+import org.openqa.selenium.WebDriver;
+import service.OpenWebDriver;
 import utils.Logger;
 
 import java.io.FileNotFoundException;
@@ -27,7 +29,8 @@ public class SingerSpider extends  Thread {
     @Override
     public void run() {
         try {
-            QSingerSpider singerSpider = new QSingerSpider(this.browser);
+            WebDriver driver = new OpenWebDriver(Browser.CHROME, true).getDriver();
+            QSingerSpider singerSpider = new QSingerSpider(driver);
 
 
             for (Letter letter: Letter.values()) {

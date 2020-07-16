@@ -41,18 +41,18 @@ public class SingersTableActions {
      * @param letter 歌手首字母
      * @param url 歌手首页url
      */
-    public static void singerInsert(String name, Area area, Letter letter, String url){
+    public static void singerInsert(String name, Area area, Letter letter, String url, int source){
 
         Db db = new Db();
         Connection connection = db.openDatabase();
 
         DbDML.executeNoneReturnSqlScript(connection,
-                "INSERT INTO singers(name,type,first_letter,photograph, url) VALUES (" +
+                "INSERT INTO singers(name,type,first_letter, url, source) VALUES (" +
                         "'" +  name + "'," +
                          + area.number() + "," +
                         "'" +  letter.toString() + "'," +
-                        "'src/main/resources/singer_photo/"+ name+".png'," +
-                        "'"+ url + "');");
+                        "'"+ url + "'," +
+                        + source +");");
 
         db.closeDatabase(connection);
     }
