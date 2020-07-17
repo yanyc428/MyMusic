@@ -4,6 +4,7 @@ import enumItem.Area;
 import enumItem.Letter;
 import enumItem.Singers;
 import enumItem.Table;
+import utils.Log;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -13,64 +14,54 @@ import java.util.List;
 
 public class SongsTableActions {
 
+    private  static Connection connection = Db.openDatabase();
+
+    @Override
+    protected void finalize() {
+        Db.closeDatabase(connection);
+    }
+
+
+
     public static void songsCreate(){
-        Db db = new Db();
-        Connection connection = db.openDatabase();
         DbDDL.tableCreate(connection, Table.songs);
-        db.closeDatabase(connection);
     }
 
     public static void songsDrop(){
-        Db db = new Db();
-        Connection connection = db.openDatabase();
         DbDDL.tableDelete(connection, Table.songs);
-        db.closeDatabase(connection);
     }
 
-    public static void songInsert(String name, Integer singerId, String album, String url, String lyric, Integer source){
-
-        Db db = new Db();
-        Connection connection = db.openDatabase();
-
+    public static void songInsert(String name, Integer singerId, String album, String url, String albumUrl, Integer source){
         try {
             DbDML.executeNoneReturnSqlScript(connection,
-                    "INSERT INTO songs(name,singer_id, album, url,lyric, photo, source) VALUES " +
+                    "INSERT INTO songs(name,singer_id, album, url,album_url,source) VALUES " +
                             "(" +
-                            "'" + name + "'," +
+                            "'" + name.replaceAll("'", "''") + "'," +
                             singerId + "," +
-                            "'" + album + "'," +
+                            "'" + album.replaceAll("'", "''") + "'," +
                             "'" +  url + "'," +
-                            "'" + lyric + "'," +
-                            "'src/main/resources/song_photo/" + singerId + album + lyric.substring(0,2) +".png'," +
+                            "'" + albumUrl + "'," +
                             + source +
                             ");");
+            Log.log(name +"数据插入成功");
         } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            Log.log(name + url + "已存在");
+            updateTime(name, url);
         }
-
-        db.closeDatabase(connection);
     }
 
-    public static void songUpdate(String name){
-        Db db = new Db();
-        Connection connection = db.openDatabase();
-
+    public static void updateTime(String name, String url){
         try {
             DbDML.executeNoneReturnSqlScript(connection,
-                    "UPDATE songs " +
-                        " SET update_time =  datetime('now', 'localtime')" +
-                            "WHERE name = " + name);
+                    "UPDATE SONGS SET UPDATE_TIME = now() "+
+                            "WHERE name = '" + name.replaceAll("'", "''") + "' " +
+                            "and url = '" + url + "';");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
-        db.closeDatabase(connection);
     }
 
     public static void songUpdate(Integer id){
-        Db db = new Db();
-        Connection connection = db.openDatabase();
-
         try {
             DbDML.executeNoneReturnSqlScript(connection,
                     "UPDATE songs " +
@@ -80,7 +71,6 @@ public class SongsTableActions {
             throwables.printStackTrace();
         }
 
-        db.closeDatabase(connection);
     }
 //
 //    public static List<String> singerSelectName(Singers column, Integer param){

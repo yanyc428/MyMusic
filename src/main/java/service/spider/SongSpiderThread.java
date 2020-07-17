@@ -1,6 +1,11 @@
 package service.spider;
 
+import enumItem.Area;
 import enumItem.Browser;
+import enumItem.Letter;
+import enumItem.Platform;
+import org.openqa.selenium.WebDriver;
+import service.OpenWebDriver;
 import utils.Log;
 import utils.Logger;
 
@@ -8,43 +13,46 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class SongSpiderThread extends Thread{
+public class SongSpiderThread implements Runnable{
 
     private Browser browser;
-    private int start;
-    private int end;
+    private Platform platform;
+    private List<HashMap<String,String>> list;
 
-    public SongSpiderThread(Browser browser, int start, int end) throws FileNotFoundException {
+    public SongSpiderThread(Browser browser, Platform platform, List<HashMap<String,String>> list){
         this.browser = browser;
-        this.start = start;
-        this.end = end;
+        this.list = list;
+        this.platform = platform;
     }
 
-    @Override
     public void run() {
         try {
-            QSongSpider songSpider = new QSongSpider(this.browser);
-            for (int i=this.start; i<this.end; i++){
-                try {
-                    songSpider.spider(i);
-                    Log.log(i+"号歌手10首歌曲导入完成");
-                }
-                catch (Exception e){
-                    e.printStackTrace();
-                    Log.error(i+"号歌手10首歌曲导入失败");
-                    continue;
-                }
-                Thread.currentThread().sleep(3000);
+            WebDriver driver = new OpenWebDriver(this.browser, false).getDriver();
+            SongSpider songSpider = null;
+            switch (platform.ordinal()){
+                case 0:
+                    songSpider = new QSongSpider(driver);
+                    break;
+                case 1:
+                    songSpider = new WSongSpider(driver);
+                    break;
+                case 2:
+                    songSpider = new KSongSpider(driver);
+                    break;
             }
+            for (Map<String, String> item :
+                    this.list) {
+                songSpider.getSongByUrl(item.get("url"), Integer.parseInt(item.get("id")));
+            }
+            songSpider.quit();
 
-            songSpider.getDriver().quit();
         }
         catch (Exception e){
             e.printStackTrace();
-            Log.error("爬虫创建失败");
         }
-
-
     }
 }

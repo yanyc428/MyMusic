@@ -267,6 +267,27 @@ public class SingersTableActions {
         }
     }
 
+    public static int getIdByNameUrl(String name, String URL){
+        ResultSet set = null;
+        int number = 0;
+        try {
+            set = DbDML.executeReturnSqlScript(connection,
+                    "SELECT  id "+
+                            "FROM singers " +
+                            "WHERE name = '" + name + "' " +
+                            "AND url = '" + URL + "';");
+            if (set.next()){
+                number = set.getInt("id");
+            }
+            set.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            Log.error("无此歌手" + name);
+        }
+        return number;
+    }
+
     public static ArrayList<HashMap<String, String>> selectOffline(Area area, Letter letter, Platform platform){
         ArrayList<HashMap<String, String>> mapList = new ArrayList<HashMap<String, String>>();
         ResultSet set;
@@ -282,6 +303,29 @@ public class SingersTableActions {
                 HashMap<String, String> map = new HashMap<String, String>();
                 map.put("name", set.getString("NAME"));
                 map.put("url", set.getString("URL"));
+                mapList.add(map);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return mapList;
+    }
+
+    public static ArrayList<HashMap<String, String>> selectAll(Platform platform, Area area){
+        ArrayList<HashMap<String, String>> mapList = new ArrayList<HashMap<String, String>>();
+        ResultSet set;
+
+        try {
+            set = DbDML.executeReturnSqlScript(connection,
+                    "SELECT ID, URL FROM SINGERS " +
+                            "WHERE source = "+ platform.ordinal() + " and " +
+                            "type = " + area.number() + ";");
+
+            while(set.next()){
+                HashMap<String, String> map = new HashMap<String, String>();
+                map.put("id", set.getString("ID"));
+                map.put("url", set.getString("URL"));
+                map.put("platform", platform.toString());
                 mapList.add(map);
             }
         } catch (SQLException throwables) {

@@ -64,18 +64,18 @@ public class DbDDL {
     private static String createSongsTable = "create table songs\n" +
             "(\n" +
             "\tid int auto_increment,\n" +
-            "\tname varchar(40) not null,\n" +
+            "\tname varchar(100) not null,\n" +
             "\tsinger_id int not null,\n" +
-            "\talbum varchar(20) default null,\n" +
+            "\talbum varchar(100) default null,\n" +
             "\tsource int not null,\n" +
             "\turl varchar(100) not null,\n" +
-            "\tlyric text default null,\n" +
+            "\tALBUM_URL varchar(100) not null,\n" +
             "\tcreate_time timestamp default now(),\n" +
             "\tupdate_time timestamp default now(),\n" +
             "\tconstraint SONGS_PK\n" +
             "\t\tprimary key (id),\n" +
             "\tconstraint SONGS_PK_2\n" +
-            "\t\tunique (name, singer_id, album, source)\n" +
+            "\t\tunique (name, url)\n" +
             ");";
 
 //    for sqlite

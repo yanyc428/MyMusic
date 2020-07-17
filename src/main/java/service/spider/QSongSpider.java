@@ -2,7 +2,9 @@ package service.spider;
 
 import dao.database.SingersTableActions;
 import dao.database.SongsTableActions;
+import enumItem.Area;
 import enumItem.Browser;
+import enumItem.Letter;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,6 +14,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import service.OpenWebDriver;
 import utils.Log;
 import utils.RandomString;
 
@@ -21,37 +24,19 @@ import java.security.interfaces.ECKey;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
-public class QSongSpider {
+public class QSongSpider implements SongSpider{
 
     private WebDriver driver;
     private WebDriverWait wait;
-    private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-
     /**
      * 构造方法
-     * @param browser 默认浏览器 Chrome使用无头模式
-     * @throws FileNotFoundException
+     * @param driver 默认浏览器 Chrome使用无头模式
      */
-    public QSongSpider(Browser browser) throws FileNotFoundException {
-        switch (browser.ordinal()){
-            case 0:
-                this.driver = new InternetExplorerDriver();
-                break;
-            case 1:
-                this.driver = new SafariDriver();
-                break;
-            case 2:
-                ChromeOptions chromeOptions = new ChromeOptions();
-//                chromeOptions.addArguments("--headless");
-//                chromeOptions.addArguments("--disable-gpu");
-                this.driver = new ChromeDriver(chromeOptions);
-                break;
-            case 3:
-                this.driver = new FirefoxDriver();
-                break;
-        }
+    public QSongSpider(WebDriver driver) {
+        this.driver = driver;
         this.wait = new WebDriverWait(driver, 10);
     }
 
@@ -63,207 +48,186 @@ public class QSongSpider {
         return driver;
     }
 
-    public void spider(int id){
-        try {
-            String url = SingersTableActions.singerSelectUrlById(id);
-            Log.log("当前爬取 " + id +"号歌手");
-            getSongBySingerId(id, url);
-        }catch (Exception e){
-            e.printStackTrace();
-            Log.error(id +"号歌手爬取失败");
-        }
-    }
 
-
-
-    public void getSongBySingerId(int id, String url){
-        String name;
-        String album;
-        String new_url;
-        String img_url;
-        String lyric;
-        String s;
+    public ArrayList<HashMap<String, String>> spiderByRetrieval(String word){
+        String songName;
+        String albumName;
+        String singerName;
+        String singerUrl;
+        String songUrl;
+        String albumUrl;
+        int singerId;
         List<WebElement> elements;
+        ArrayList<HashMap<String, String>> mapList= new ArrayList<HashMap<String,String>>();
+        String url = "https://y.qq.com/portal/search.html#page=1&searchid=1&remoteplace=txt.yqq.top&t=song&w=" + word.replaceAll(" ", "%20");
 
         try {
             this.driver.get(url);
-            Thread.sleep(5000);
+            Thread.sleep(1000); //至关重要 不能删
             this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("songlist__list")));
             elements = this.driver.findElement(By.className("songlist__list")).findElements(By.tagName("li"));
-        }
-        catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
-            Log.error("url("+ id + ")打开异常:" + url);
-            return;
+            Log.error("检索异常  检索词:" + word);
+            return mapList;
         }
 
-        for(int i=0; i<elements.size(); i++){
+        for (int i=0; i<elements.size(); i++){
+            HashMap<String, String> map = new HashMap<String, String>();
             try {
-                this.driver.get(url);
-                this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("songlist__list")));
-                elements = this.driver.findElement(By.className("songlist__list")).findElements(By.tagName("li"));
-            }
-            catch (Exception e){
+                songName = elements.get(i).findElement(By.className("songlist__songname_txt")).findElement(By.tagName("a")).getAttribute("title");
+                map.put("name", songName);
+                Log.log("歌曲名:" + songName);
+            } catch (Exception e){
                 e.printStackTrace();
-                Log.error(" url("+ id + "," + i  + ")打开异常:" + url);
+                Log.error("歌曲名获取失败  检索词:" + word + " "+i);
                 continue;
             }
 
             try {
-                name = elements.get(i).findElement(By.className("songlist__songname_txt")).getText();
-                Log.log("歌曲名:" +name);
-            }
-            catch (Exception e){
+                songUrl = elements.get(i).findElement(By.className("songlist__songname_txt")).findElement(By.tagName("a")).getAttribute("href");
+                map.put("url", songUrl);
+                Log.log("歌曲url:"+ songUrl);
+            } catch (Exception e){
                 e.printStackTrace();
-                Log.error("歌曲名获取失败"+"("+id+","+i+")");
+                Log.error("歌曲url获取失败  检索词:" + word + " "+i);
                 continue;
             }
 
             try {
-                new_url = elements.get(i).findElement(
-                        By.className("songlist__songname_txt")).findElement(By.tagName("a")).getAttribute("href");
-                Log.log("歌曲url:" +new_url);
-            }
-            catch (Exception e){
+                singerName = elements.get(i).findElement(By.className("singer_name")).getAttribute("title");
+                map.put("singerName", singerName);
+                Log.log("歌手名:"+ singerName);
+            } catch (Exception e){
                 e.printStackTrace();
-                Log.error("歌曲url获取失败"+"("+id+","+i+","+name+")");
+                Log.error("歌手名获取失败  检索词:" + word + " "+i);
                 continue;
             }
 
             try {
-                album = elements.get(i).findElement(
-                        By.className("songlist__album")).getText();
-                Log.log("歌曲专辑:" +album);
-            }
-            catch (Exception e){
+                singerUrl = elements.get(i).findElement(By.className("singer_name")).getAttribute("href");
+                map.put("singerUrl", singerUrl);
+                Log.log("歌手url:"+ singerUrl);
+            } catch (Exception e){
                 e.printStackTrace();
-                Log.error("歌曲专辑获取失败"+"("+id+","+i+","+name+")");
+                Log.error("歌手url获取失败  检索词:" + word + " "+i);
+                continue;
+            }
+
+            try {
+                albumName = elements.get(i).findElement(By.className("album_name")).getAttribute("title");
+                map.put("albumName", albumName);
+                Log.log("专辑名:"+ albumName);
+            } catch (Exception e){
+                e.printStackTrace();
+                Log.error("专辑名获取失败  检索词:" + word + " "+i);
+                continue;
+            }
+
+            try {
+                albumUrl = elements.get(i).findElement(By.className("album_name")).getAttribute("href");
+                map.put("albumUrl", albumUrl);
+                Log.log("专辑url:"+ albumUrl);
+            } catch (Exception e){
+                e.printStackTrace();
+                Log.error("专辑url获取失败  检索词:" + word + " "+i);
                 continue;
             }
 
 
-
-            try {
-                this.driver.get(new_url);
-                this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("lyric__cont_box")));
-                try {
-                    this.wait.until(ExpectedConditions.textToBePresentInElement(this.driver.findElement(By.className("lyric__cont_box")), " "));
+            singerId = SingersTableActions.getIdByNameUrl(singerName, singerUrl +"#stat=y_new.singerlist.singername");
+            if (singerId == 0){
+                singerId = SingersTableActions.getIdByNameUrl(singerName, singerUrl);
+                if (singerId == 0){
+                    SingersTableActions.singerInsert(singerName, Area.UNK, Letter.UNK, singerUrl, 0);
+                    singerId = SingersTableActions.getIdByNameUrl(singerName, singerUrl);
                 }
-                catch (Exception e1){
-                    try {
-                        this.wait.until(ExpectedConditions.textToBePresentInElement(this.driver.findElement(By.className("lyric__cont_box")), "纯音乐"));
-                    }
-                    catch (Exception e2){
-                        this.wait.until(ExpectedConditions.textToBePresentInElement(this.driver.findElement(By.className("lyric__cont_box")), "暂无歌词"));
-                    }
-                }
-
-                lyric = this.driver.findElement(By.className("lyric__cont_box")).getAttribute("textContent").trim();
-                System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 歌曲歌词获取成功:"+ name);
-            }
-            catch (Exception e){
-                e.printStackTrace();
-                Log.error("歌曲歌词获取失败"+"("+id+","+i+","+name+")");
-                continue;
             }
 
-            try {
-                this.driver.get(new_url);
-                img_url = this.driver.findElement(By.className("data__photo")).getAttribute("src");
-                System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " 歌曲img_url:"+ img_url);
-                getPhoto(img_url, name);
-            }
-            catch (Exception e){
-                e.printStackTrace();
-                Log.error("歌曲照片获取失败"+"("+id+","+i+","+name+")");
-                continue;
-            }
+            SongsTableActions.songInsert(songName, singerId, albumName, songUrl, albumUrl, 0);
 
-            try {
-                SongsTableActions.songInsert(name, id, album, new_url, lyric, 0);
-                System.out.println(df.format(new Date()) +" " + Thread.currentThread().toString()+ " "+ name +"数据插入成功");
-            }catch (Exception e){
-                e.printStackTrace();
-                Log.error("数据插入失败"+ id +" "+name);
-                continue;
-            }
-            try {
-                Thread.currentThread().sleep(1000);
-            }
-            catch (Exception e){
-                e.printStackTrace();
-            }
+            mapList.add(map);
         }
+
+        return  mapList;
+
+
     }
 
-    /**
-     * 根据检索词找音乐
-     * @param retrieval
-     */
-    public void getSongByName(String retrieval){
-        String url = "https://y.qq.com/";
 
-        /**
-         * 输入检索词  点击检索
-         */
+
+    public ArrayList<HashMap<String, String>> getSongByUrl(String url, int id){
+        String songName;
+        String albumName;
+        String songUrl;
+        String albumUrl;
+        List<WebElement> elements;
+        ArrayList<HashMap<String, String>> mapList= new ArrayList<HashMap<String,String>>();
+
         try {
             this.driver.get(url);
-            this.driver.findElement(By.className("search_input__input")).sendKeys(retrieval);
-            this.driver.findElement(By.className("search_input__btn")).click();
-            this.driver.findElement(By.className("search_input__btn")).click();
-            Log.error("QQ音乐" + retrieval + "检索跳转成功");
-        }catch (Exception e){
-            e.printStackTrace();
-            Log.error("QQ音乐" + retrieval + "检索失败");
-        }
-
-        /**
-         *
-         */
-        try {
-            List<WebElement> elements;
+            Thread.sleep(1000); //至关重要 不能删
             this.wait.until(ExpectedConditions.presenceOfElementLocated(By.className("songlist__list")));
             elements = this.driver.findElement(By.className("songlist__list")).findElements(By.tagName("li"));
-            System.out.println(elements.size());
-            for (WebElement item:elements) {
-                System.out.println(item.findElement(By.className("songlist__songname_txt")).getText());
-            }
-        }catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
+            Log.error("检索异常  url:" + url);
+            return mapList;
         }
 
+        for (int i=0; i<elements.size(); i++){
+            HashMap<String, String> map = new HashMap<String, String>();
+            try {
+                songName = elements.get(i).findElement(By.className("songlist__songname_txt")).findElement(By.tagName("a")).getAttribute("title");
+                map.put("name", songName);
+                Log.log("歌曲名:" + songName);
+            } catch (Exception e){
+                e.printStackTrace();
+                Log.error("歌曲名获取失败  url:" + url + " "+i);
+                continue;
+            }
 
+            try {
+                songUrl = elements.get(i).findElement(By.className("songlist__songname_txt")).findElement(By.tagName("a")).getAttribute("href");
+                map.put("url", songUrl);
+                Log.log("歌曲url:"+ songUrl);
+            } catch (Exception e){
+                e.printStackTrace();
+                Log.error("歌曲url获取失败  url:" + url + " "+i);
+                continue;
+            }
+
+
+            try {
+                albumName = elements.get(i).findElement(By.className("songlist__album")).findElement(By.tagName("a")).getAttribute("title");
+                map.put("albumName", albumName);
+                Log.log("专辑名:"+ albumName);
+            } catch (Exception e){
+                e.printStackTrace();
+                Log.error("专辑名获取失败  url:" + url + " "+i);
+                continue;
+            }
+
+            try {
+                albumUrl = elements.get(i).findElement(By.className("songlist__album")).findElement(By.tagName("a")).getAttribute("href");
+                map.put("albumUrl", albumUrl);
+                Log.log("专辑url:"+ albumUrl);
+            } catch (Exception e){
+                e.printStackTrace();
+                Log.error("专辑url获取失败  url:" + url + " "+i);
+                continue;
+            }
+
+            SongsTableActions.songInsert(songName, id, albumName, songUrl, albumUrl, 0);
+
+            mapList.add(map);
+        }
+
+        return  mapList;
     }
 
-    /**
-     * 根据url下载图片 返回图片存放地址
-     * @param url 图片url
-     * @param name 歌曲名
-     * @return 图片存放地址
-     */
-    public String getPhoto(String url, String name){
-        String fileName = "song_photo/"+ RandomString.getString(10) +".png";
-        try {
-            URL uri = new URL(url);
-            InputStream in = uri.openStream();
-            String filePath = System.getProperty("user.dir") + "/resources/view/";
-            FileOutputStream fo = new FileOutputStream(new File(filePath+fileName));//文件输出流
-            byte[] buf = new byte[1024];
-            int length = 0;
-            Log.log("开始下载:" + url);
-            while ((length = in.read(buf, 0, buf.length)) != -1) {
-                fo.write(buf, 0, length);
-            }
-            //关闭流
-            in.close();
-            fo.close();
-            Log.log(name + "下载完成, 路径:" + fileName);
-            return fileName;
-        }
-        catch (IOException e){
-            e.printStackTrace();
-            Log.error("歌曲图片下载异常: " + name);
-        }
-        return "";
+    public void quit(){
+        this.driver.quit();
     }
+
 }

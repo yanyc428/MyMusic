@@ -1,7 +1,7 @@
 package enumItem;
 
 public enum Area {
-
+    UNK(0),
     CHN_M(11), CHN_F(12), CHN_G(13),
     AME_M(21), AME_F(22), AME_G(23),
     JPN_M(31), JPN_F(32), JPN_G(33),

@@ -61,7 +61,7 @@ private JPanel contentJPanel;
 		contentJPanel.setPreferredSize(new Dimension(1000, 700));
 		contentJPanel.setLayout(new BorderLayout(0,0));
 		initialize(id, frame);
-		Log.log("成功加载在线检索歌手界面 id=" + id);
+		Log.log("成功加载离线检索歌手界面 id=" + id);
 	}
 	
 //	

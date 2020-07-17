@@ -1,0 +1,325 @@
+2020-07-17 02:38:02 Thread[pool-1-thread-10,5,main] url(AME_M J)打开异常:https://y.qq.com/portal/singer_list.html#genre=-100&sex=0&area=5&page=437&index=10&
+2020-07-17 02:47:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MA
+2020-07-17 02:47:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MB
+2020-07-17 02:48:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MC
+2020-07-17 02:48:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MD
+2020-07-17 02:49:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_ME
+2020-07-17 02:49:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MF
+2020-07-17 02:50:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MG
+2020-07-17 02:50:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MH
+2020-07-17 02:50:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FA
+2020-07-17 02:51:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MI
+2020-07-17 02:51:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FB
+2020-07-17 02:51:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MJ
+2020-07-17 02:51:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FC
+2020-07-17 02:52:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MK
+2020-07-17 02:52:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FD
+2020-07-17 02:52:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_ML
+2020-07-17 02:52:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FE
+2020-07-17 02:53:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MM
+2020-07-17 02:53:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FF
+2020-07-17 02:53:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MN
+2020-07-17 02:53:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FG
+2020-07-17 02:54:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MO
+2020-07-17 02:54:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FH
+2020-07-17 02:54:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MP
+2020-07-17 02:54:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FI
+2020-07-17 02:55:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MQ
+2020-07-17 02:55:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FJ
+2020-07-17 02:55:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MR
+2020-07-17 02:55:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FK
+2020-07-17 02:56:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MS
+2020-07-17 02:56:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FL
+2020-07-17 02:56:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MT
+2020-07-17 02:56:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FM
+2020-07-17 02:56:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GA
+2020-07-17 02:57:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MU
+2020-07-17 02:57:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FN
+2020-07-17 02:57:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GB
+2020-07-17 02:57:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MV
+2020-07-17 02:57:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FO
+2020-07-17 02:57:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GC
+2020-07-17 02:58:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MW
+2020-07-17 02:58:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FP
+2020-07-17 02:58:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GD
+2020-07-17 02:58:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MX
+2020-07-17 02:58:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FQ
+2020-07-17 02:58:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GE
+2020-07-17 02:59:11 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MY
+2020-07-17 02:59:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FR
+2020-07-17 02:59:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GF
+2020-07-17 02:59:41 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouKOR_MZ
+2020-07-17 02:59:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FS
+2020-07-17 02:59:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GG
+2020-07-17 03:00:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MA
+2020-07-17 03:00:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FT
+2020-07-17 03:00:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GH
+2020-07-17 03:00:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MB
+2020-07-17 03:00:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FU
+2020-07-17 03:00:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GI
+2020-07-17 03:01:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MC
+2020-07-17 03:01:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FV
+2020-07-17 03:01:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GJ
+2020-07-17 03:01:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MD
+2020-07-17 03:01:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FW
+2020-07-17 03:01:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GK
+2020-07-17 03:02:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_ME
+2020-07-17 03:02:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FX
+2020-07-17 03:02:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GL
+2020-07-17 03:02:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MF
+2020-07-17 03:02:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FY
+2020-07-17 03:02:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GM
+2020-07-17 03:03:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MG
+2020-07-17 03:03:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouKOR_FZ
+2020-07-17 03:03:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GN
+2020-07-17 03:03:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MH
+2020-07-17 03:03:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FA
+2020-07-17 03:03:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GO
+2020-07-17 03:04:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MI
+2020-07-17 03:04:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FB
+2020-07-17 03:04:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GP
+2020-07-17 03:04:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MJ
+2020-07-17 03:04:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FC
+2020-07-17 03:04:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GQ
+2020-07-17 03:05:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MK
+2020-07-17 03:05:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FD
+2020-07-17 03:05:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GR
+2020-07-17 03:05:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_ML
+2020-07-17 03:05:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FE
+2020-07-17 03:05:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GS
+2020-07-17 03:06:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MM
+2020-07-17 03:06:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FF
+2020-07-17 03:06:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GT
+2020-07-17 03:06:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MN
+2020-07-17 03:06:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FG
+2020-07-17 03:06:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GU
+2020-07-17 03:07:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MO
+2020-07-17 03:07:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FH
+2020-07-17 03:07:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GV
+2020-07-17 03:07:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MP
+2020-07-17 03:07:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FI
+2020-07-17 03:07:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GW
+2020-07-17 03:08:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MQ
+2020-07-17 03:08:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FJ
+2020-07-17 03:08:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GX
+2020-07-17 03:08:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MR
+2020-07-17 03:08:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FK
+2020-07-17 03:08:52 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GY
+2020-07-17 03:09:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MS
+2020-07-17 03:09:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FL
+2020-07-17 03:09:22 Thread[pool-1-thread-4,5,main] 无效的爬取请求,KuGouKOR_GZ
+2020-07-17 03:09:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MT
+2020-07-17 03:09:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FM
+2020-07-17 03:10:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MU
+2020-07-17 03:10:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FN
+2020-07-17 03:10:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MV
+2020-07-17 03:10:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FO
+2020-07-17 03:11:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MW
+2020-07-17 03:11:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FP
+2020-07-17 03:11:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MX
+2020-07-17 03:11:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FQ
+2020-07-17 03:12:12 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MY
+2020-07-17 03:12:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FR
+2020-07-17 03:12:42 Thread[pool-1-thread-7,5,main] 无效的爬取请求,KuGouOTH_MZ
+2020-07-17 03:12:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FS
+2020-07-17 03:13:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FT
+2020-07-17 03:13:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FU
+2020-07-17 03:14:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FV
+2020-07-17 03:14:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FW
+2020-07-17 03:15:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FX
+2020-07-17 03:15:42 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FY
+2020-07-17 03:16:12 Thread[pool-1-thread-9,5,main] 无效的爬取请求,KuGouOTH_FZ
+2020-07-17 15:33:02 Thread[main,5,main] 无此歌手林俊杰
+2020-07-17 15:37:51 Thread[main,5,main] 无此歌手林俊杰
+2020-07-17 15:37:51 Thread[main,5,main] 无此歌手林俊杰
+2020-07-17 16:04:52 Thread[main,5,main] 检索异常  检索词:水星记
+2020-07-17 16:25:15 Thread[main,5,main] 歌手url获取失败  检索词:love story 1
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 2
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 3
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 4
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 5
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 6
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 7
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 8
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 9
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 10
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 11
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 12
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 13
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 14
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 15
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 16
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 17
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 18
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 19
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 20
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 21
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 22
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 23
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 24
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 25
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 26
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 27
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 28
+2020-07-17 16:25:15 Thread[main,5,main] 歌曲名获取失败  检索词:love story 29
+2020-07-17 16:41:28 Thread[main,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/3520.html
+2020-07-17 16:42:01 Thread[main,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/3520.html
+2020-07-17 19:09:53 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/157683.html
+2020-07-17 19:09:53 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/575260.html
+2020-07-17 19:10:05 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/944969.html
+2020-07-17 19:10:05 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/813534.html
+2020-07-17 19:10:16 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/842571.html
+2020-07-17 19:10:17 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/841945.html
+2020-07-17 19:10:28 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/754794.html
+2020-07-17 19:10:28 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/853657.html
+2020-07-17 19:10:38 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2.html
+2020-07-17 19:10:40 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/717438.html
+2020-07-17 19:10:40 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/294459.html
+2020-07-17 19:10:50 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/628633.html
+2020-07-17 19:10:52 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/815967.html
+2020-07-17 19:10:52 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/554640.html
+2020-07-17 19:11:04 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/89632.html
+2020-07-17 19:11:05 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/9.html
+2020-07-17 19:11:16 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/574175.html
+2020-07-17 19:11:17 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/82.html
+2020-07-17 19:11:28 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/723958.html
+2020-07-17 19:11:29 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/180345.html
+2020-07-17 19:11:29 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2627.html
+2020-07-17 19:11:40 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/859066.html
+2020-07-17 19:11:41 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2626.html
+2020-07-17 19:11:44 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/5.html
+2020-07-17 19:11:52 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/183323.html
+2020-07-17 19:11:53 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2632.html
+2020-07-17 19:11:55 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/180348.html
+2020-07-17 19:12:04 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/782368.html
+2020-07-17 19:12:05 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2633.html
+2020-07-17 19:12:07 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/3.html
+2020-07-17 19:12:17 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2631.html
+2020-07-17 19:12:23 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/157842.html
+2020-07-17 19:12:28 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2629.html
+2020-07-17 19:12:35 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/223449.html
+2020-07-17 19:12:40 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/201804.html
+2020-07-17 19:12:50 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/92246.html
+2020-07-17 19:12:52 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/35175.html
+2020-07-17 19:13:02 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/194110.html
+2020-07-17 19:13:04 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2635.html
+2020-07-17 19:13:16 Thread[pool-1-thread-6,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/819926.html
+2020-07-17 19:13:17 Thread[pool-1-thread-1,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/151002.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 专辑url获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 1
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 2
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 3
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 专辑名获取失败  url:https://y.qq.com/n/yqq/singer/001nvt5d1DshoH.html#stat=y_new.singerlist.singername 3
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 4
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 5
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 6
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/001nvt5d1DshoH.html#stat=y_new.singerlist.singername 4
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 7
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/001nvt5d1DshoH.html#stat=y_new.singerlist.singername 5
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 8
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/001nvt5d1DshoH.html#stat=y_new.singerlist.singername 6
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/002VR4xn41Nqvh.html#stat=y_new.singerlist.singername 9
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/001nvt5d1DshoH.html#stat=y_new.singerlist.singername 7
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/00119SY526dIu7.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/001nvt5d1DshoH.html#stat=y_new.singerlist.singername 8
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001p6nAM1nrkyI.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 歌曲名获取失败  url:https://y.qq.com/n/yqq/singer/001nvt5d1DshoH.html#stat=y_new.singerlist.singername 9
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0018DCaM1TmyRA.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001j1iVh2IiLgg.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003Vp4dM2t4EhL.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001Ntmo53HfMZx.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000x0UYw4B8hn2.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002mnbAI1LCe2H.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0044LdJc3P5SHG.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001OMfYe01eXhN.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003I4Xbt3JDlnA.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000itww408VVeN.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0009ClZA0yDZOU.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002etMoH1ZdQgq.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001XX3Ma2GCtMr.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0008Vwgo1oYU26.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002BQrbU07ajyo.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001xY0Nb0ZgaBz.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001ZgfsJ1OP74g.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000aHmbL2aPXWH.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0011EMkN4fCHu5.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000yfge8345ACE.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002G1hSl0vlyvw.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000pMsBK3oYXGa.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0034Q7mX3n9b5L.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0004YizX01wi7h.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001HFqRS4Sb187.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004HZoBV1KmYVt.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000Ev4Fs2OsFsc.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002rxwPA4USPFe.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003kccqn1jXLe3.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000Pfzuj1FYPEt.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001mezyx2TCZzH.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004DTwxC4XmMOU.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0049FLMN0kQrmC.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001EoiBL0ktb98.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003YyKBz1prETU.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000h6W0L35RIew.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003WvFwp3K8bzX.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003SNaC62af7qw.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002DqdyB0kVIZi.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001hlBa32mBwq9.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002Y8oJ20bheep.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001Xh0X14G4Qv2.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001hqFQV1939hs.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000Q8iDj1Xaq11.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003GhY2k2YlYBj.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002qVlUv43DJ3h.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004TXjLD41LEZI.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003bWE0x0fKFZp.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001YCUUw0Lkhmo.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004XU7qz0fGX1a.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003b5M6y1jARmH.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002u9g1H0W5bZx.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001HXWxi185oiP.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001BqgvO0a6JAq.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003N7s4a2eZUSW.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0045itb20xVn75.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002lr84437HJxl.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003dt2bW41eD5D.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1573.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000NFT2p1GbnPB.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004QUwns4F5ON3.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1574.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003yM0OT1EPY0y.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000I3b6g4MWa7q.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/93475.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003o2ye43XMVz8.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003TNB374RY56w.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1576.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/001yIMgp3RUjdw.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0011MWLH4cnqKW.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1900.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003Ag2Jz3RQp3o.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004Jh41Z1UA1Gv.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1960.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000Z1zfq117JN0.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004BLbGB0dGPfs.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/810482.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002YhxzT2BWMKM.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000n1IYB1uBYkx.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1595.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0047zlwb09mwuF.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/0015XVzg2XOZ2W.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/173452.html
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/002khdC11zGBmL.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1588.html
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003PxzeJ2YXXuu.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003pwwCr11dKd5.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1586.html
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004E79Wy0jLNKb.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/003iS0ID43LIxm.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/723727.html
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/00062S8A15HNVz.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/767630.html
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1590.html
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/004WRLvn1RPWv5.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/881.html
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/2018.html
+2020-07-17 19:13:20 Thread[pool-1-thread-3,5,main] 检索异常  url:https://y.qq.com/n/yqq/singer/000QRvck3bNecS.html#stat=y_new.singerlist.singername
+2020-07-17 19:13:20 Thread[pool-1-thread-2,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/646107.html
+2020-07-17 19:13:20 Thread[pool-1-thread-4,5,main] 检索异常  url:https://www.kugou.com/yy/singer/home/1572.html

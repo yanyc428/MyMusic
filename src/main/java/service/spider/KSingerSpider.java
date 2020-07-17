@@ -126,7 +126,7 @@ public class KSingerSpider implements SingerSpider {
             }
 
 
-            SingersTableActions.singerInsert(name, area, letter, singer_url, 0);
+            SingersTableActions.singerInsert(name, area, letter, singer_url, 2);
 
             mapList.add(map);
         }
