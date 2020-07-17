@@ -1,5 +1,5 @@
 package enumItem;
 
 public enum Table {
-    singers, songs, users
+    singers, songs, users, love
 }

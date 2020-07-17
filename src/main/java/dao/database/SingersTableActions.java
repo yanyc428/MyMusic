@@ -237,25 +237,32 @@ public class SingersTableActions {
         return 0;
     }
 
-    public static String singerSelectUrlById(Integer param){
+    
+    public static HashMap<String, String> singerSelectUrlNameById(Integer id){
         ResultSet set = null;
-
+        HashMap<String, String> map = new HashMap<String, String>();
         try {
             set = DbDML.executeReturnSqlScript(connection,
-                    "SELECT  url "+
+                    "SELECT  name, url "+
                             "FROM singers " +
-                            "WHERE id = " + param);
-            String s = set.getString("url");
+                            "WHERE id = " + id);
+            
+            if (set.next()) {
+				map.put("name", set.getString("name"));
+				map.put("url", set.getString("url"));
+			}
             set.close();
-            return s;
+            return map;
         }
         catch (Exception e){
             e.printStackTrace();
-            System.out.println(param +"号歌手爬取失败");
+            Log.error("暂无此人"  + id);
         }
 
-        return null;
+        return map;
     }
+    
+    
     public static void updateTime(String name, String URL){
         try {
             DbDML.executeNoneReturnSqlScript(connection,

@@ -113,11 +113,30 @@ public class DbDDL {
             "\tconstraint TABLE_NAME_PK_2\n" +
             "\t\tunique (e_mail, user_name)\n" +
             ");\n";
+
+    public static String createLoveTable = "create table love\n" +
+            "(\n" +
+            "\tid int auto_increment\n" +
+            "\t\tconstraint LOVE_PK\n" +
+            "\t\t\tunique,\n" +
+            "\tuser_id int not null,\n" +
+            "\tsong_id int not null,\n" +
+            "\tcreate_time timestamp default now(),\n" +
+            "\tconstraint LOVE_PK_2\n" +
+            "\t\tprimary key (song_id, user_id),\n" +
+            "\tconstraint LOVE_SONGS_ID_FK\n" +
+            "\t\tforeign key (SONG_ID) references SONGS,\n" +
+            "\tconstraint LOVE_USERS_ID_FK\n" +
+            "\t\tforeign key (USER_ID) references USERS " +
+            ");";
+
     private static String deleteSingerTable = "drop table if exists singers;";
 
     private static String deleteSongsTable = "drop table if exists songs;";
 
     private static String deleteUsersTable = "drop table if exists users;";
+
+    private static String deleteLoveTable = "drop table if exists love;";
 
     /**
      * 创建表
@@ -136,6 +155,8 @@ public class DbDDL {
                 case 2:
                     DbDML.executeNoneReturnSqlScript(connection, createUsersTable);
                     break;
+                case 3:
+                    DbDML.executeNoneReturnSqlScript(connection, createLoveTable);
             }
             Log.log(table.toString() + "创建成功");
         }
@@ -163,6 +184,8 @@ public class DbDDL {
                 case 2:
                     DbDML.executeNoneReturnSqlScript(connection, deleteUsersTable);
                     break;
+                case 3:
+                    DbDML.executeNoneReturnSqlScript(connection, deleteLoveTable);
             }
             Log.log(table.toString() + "删除成功");
         }

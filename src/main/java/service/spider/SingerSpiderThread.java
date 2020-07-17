@@ -3,13 +3,10 @@ package service.spider;
 import enumItem.*;
 import org.openqa.selenium.WebDriver;
 import service.OpenWebDriver;
+import service.spider.kugoumusic.KSingerSpider;
+import service.spider.qqmusic.QSingerSpider;
+import service.spider.wangyiyunmusic.WSingerSpider;
 import utils.Log;
-import utils.Logger;
-
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class SingerSpiderThread implements Runnable {
 

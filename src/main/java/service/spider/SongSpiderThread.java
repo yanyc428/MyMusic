@@ -1,18 +1,13 @@
 package service.spider;
 
-import enumItem.Area;
 import enumItem.Browser;
-import enumItem.Letter;
 import enumItem.Platform;
 import org.openqa.selenium.WebDriver;
 import service.OpenWebDriver;
-import utils.Log;
-import utils.Logger;
+import service.spider.kugoumusic.KSongSpider;
+import service.spider.qqmusic.QSongSpider;
+import service.spider.wangyiyunmusic.WSongSpider;
 
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

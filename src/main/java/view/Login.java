@@ -17,6 +17,7 @@ import javax.swing.SwingConstants;
 
 import dao.database.SingersTableActions;
 import dao.database.UsersTableActions;
+import service.LoginService;
 import utils.Log;
 
 import javax.swing.JTextField;
@@ -86,9 +87,9 @@ public class Login {
 		
 		JPanel mymusicPanel = new JPanel();
 		mymusicPanel.setBackground(new Color(245, 245, 245));
-		mymusicPanel.setMinimumSize(new Dimension(200, 160));
-		mymusicPanel.setMaximumSize(new Dimension(200, 160));
-		mymusicPanel.setPreferredSize(new Dimension(200, 160));
+		mymusicPanel.setMinimumSize(new Dimension(200, 120));
+		mymusicPanel.setMaximumSize(new Dimension(200, 120));
+		mymusicPanel.setPreferredSize(new Dimension(200, 120));
 		leftBarMenuPanel.add(mymusicPanel);
 		mymusicPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
@@ -114,36 +115,8 @@ public class Login {
 		mymusicLoveButton.setPreferredSize(new Dimension(160, 30));
 		mymusicLoveButton.setIcon(new ImageIcon(dir + "love.png"));
 		mymusicPanel.add(mymusicLoveButton);
-		
-		JButton mymusicListButton = new JButton("我的歌单");
-		mymusicListButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				mention.setText("请先登录");
-			}
-		});
-		mymusicListButton.setForeground(new Color(105, 105, 105));
-		mymusicListButton.setHorizontalAlignment(SwingConstants.LEFT);
-		mymusicListButton.setBorderPainted(false);
-		mymusicListButton.setPreferredSize(new Dimension(160, 30));
-		mymusicListButton.setMinimumSize(new Dimension(160, 30));
-		mymusicListButton.setMaximumSize(new Dimension(160, 30));
-		mymusicListButton.setIcon(new ImageIcon(dir + "list.png"));
-		mymusicPanel.add(mymusicListButton);
-		
-		JButton mymusicHistoryButton = new JButton("检索历史");
-		mymusicHistoryButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				mention.setText("请先登录");
-			}
-		});
-		mymusicHistoryButton.setForeground(new Color(105, 105, 105));
-		mymusicHistoryButton.setHorizontalAlignment(SwingConstants.LEFT);
-		mymusicHistoryButton.setBorderPainted(false);
-		mymusicHistoryButton.setMaximumSize(new Dimension(160, 30));
-		mymusicHistoryButton.setMinimumSize(new Dimension(160, 30));
-		mymusicHistoryButton.setPreferredSize(new Dimension(160, 30));
-		mymusicHistoryButton.setIcon(new ImageIcon(dir + "history.png"));
-		mymusicPanel.add(mymusicHistoryButton);
+
+
 		
 		JPanel onlinePanel = new JPanel();
 		onlinePanel.setBackground(new Color(245, 245, 245));
@@ -165,8 +138,7 @@ public class Login {
 		JButton onlineSingerButton = new JButton("歌手");
 		onlineSingerButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				frame.getContentPane().setVisible(false);
-				frame.setContentPane(new OnlineSingerIndex(0, frame).getContentJPanel());
+				mention.setText("请先登录");
 			}
 		});
 		onlineSingerButton.setForeground(new Color(105, 105, 105));
@@ -179,6 +151,11 @@ public class Login {
 		onlinePanel.add(onlineSingerButton);
 		
 		JButton onlineSongButton = new JButton("歌曲");
+		onlineSongButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				mention.setText("请先登录");
+			}
+		});
 		onlineSongButton.setHorizontalAlignment(SwingConstants.LEFT);
 		onlineSongButton.setForeground(new Color(105, 105, 105));
 		onlineSongButton.setBorderPainted(false);
@@ -221,6 +198,12 @@ public class Login {
 		offlinePanel.add(offlineSingerButton);
 		
 		JButton offlineSongButton = new JButton("歌曲");
+		offlineSongButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new OfflineSongIndex(0, frame).getContentJPanel());
+			}
+		});
 		offlineSongButton.setForeground(new Color(105, 105, 105));
 		offlineSongButton.setHorizontalAlignment(SwingConstants.LEFT);
 		offlineSongButton.setPreferredSize(new Dimension(160, 30));
@@ -338,7 +321,7 @@ public class Login {
 				String name = usrNameField.getText();
                 String password = new String(pwdField.getPassword());
 
-                int usrId = UsersTableActions.checkUser(name, name, password);
+                int usrId = LoginService.checkUser(name, name, password);
                 
                 if (usrId!=0){
                     frame.getContentPane().setVisible(false);

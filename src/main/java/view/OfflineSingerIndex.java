@@ -3,7 +3,6 @@ package view;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.EventQueue;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.Image;
@@ -24,8 +23,6 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingConstants;
 
-import org.openqa.selenium.WebDriver;
-
 import dao.database.SingersTableActions;
 import dao.database.UsersTableActions;
 import enumItem.Area;
@@ -33,10 +30,6 @@ import enumItem.Browser;
 import enumItem.Letter;
 import enumItem.Platform;
 import service.OpenWebDriver;
-import service.spider.KSingerSpider;
-import service.spider.QSingerSpider;
-import service.spider.SingerSpider;
-import service.spider.WSingerSpider;
 import utils.Log;
 
 public class OfflineSingerIndex {
@@ -95,9 +88,9 @@ private JPanel contentJPanel;
 		
 		JPanel mymusicPanel = new JPanel();
 		mymusicPanel.setBackground(new Color(245, 245, 245));
-		mymusicPanel.setMinimumSize(new Dimension(200, 160));
-		mymusicPanel.setMaximumSize(new Dimension(200, 160));
-		mymusicPanel.setPreferredSize(new Dimension(200, 160));
+		mymusicPanel.setMinimumSize(new Dimension(200, 120));
+		mymusicPanel.setMaximumSize(new Dimension(200, 120));
+		mymusicPanel.setPreferredSize(new Dimension(200, 120));
 		leftBarMenuPanel.add(mymusicPanel);
 		mymusicPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
@@ -107,8 +100,21 @@ private JPanel contentJPanel;
 		mymusicLabel.setMinimumSize(new Dimension(160, 30));
 		mymusicLabel.setPreferredSize(new Dimension(160, 30));
 		mymusicPanel.add(mymusicLabel);
-		
+
+		final JLabel mentionLabel = new JLabel();
+
 		JButton mymusicLoveButton = new JButton("我喜欢");
+		mymusicLoveButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (id!=0){
+					frame.getContentPane().setVisible(false);
+					frame.setContentPane(new LoveView(id, frame).getContentJPanel());
+				}
+				else{
+					mentionLabel.setText("请先登录");
+				}
+			}
+		});
 		mymusicLoveButton.setBorderPainted(false);
 		mymusicLoveButton.setBackground(new Color(245, 245, 245));
 		mymusicLoveButton.setForeground(new Color(105, 105, 105));
@@ -118,27 +124,8 @@ private JPanel contentJPanel;
 		mymusicLoveButton.setPreferredSize(new Dimension(160, 30));
 		mymusicLoveButton.setIcon(new ImageIcon(dir + "love.png"));
 		mymusicPanel.add(mymusicLoveButton);
-		
-		JButton mymusicListButton = new JButton("我的歌单");
-		mymusicListButton.setForeground(new Color(105, 105, 105));
-		mymusicListButton.setHorizontalAlignment(SwingConstants.LEFT);
-		mymusicListButton.setBorderPainted(false);
-		mymusicListButton.setPreferredSize(new Dimension(160, 30));
-		mymusicListButton.setMinimumSize(new Dimension(160, 30));
-		mymusicListButton.setMaximumSize(new Dimension(160, 30));
-		mymusicListButton.setIcon(new ImageIcon(dir + "list.png"));
-		mymusicPanel.add(mymusicListButton);
-		
-		JButton mymusicHistoryButton = new JButton("检索历史");
-		mymusicHistoryButton.setForeground(new Color(105, 105, 105));
-		mymusicHistoryButton.setHorizontalAlignment(SwingConstants.LEFT);
-		mymusicHistoryButton.setBorderPainted(false);
-		mymusicHistoryButton.setMaximumSize(new Dimension(160, 30));
-		mymusicHistoryButton.setMinimumSize(new Dimension(160, 30));
-		mymusicHistoryButton.setPreferredSize(new Dimension(160, 30));
-		mymusicHistoryButton.setIcon(new ImageIcon(dir + "history.png"));
-		mymusicPanel.add(mymusicHistoryButton);
-		
+
+
 		JPanel onlinePanel = new JPanel();
 		onlinePanel.setBackground(new Color(245, 245, 245));
 		onlinePanel.setForeground(new Color(245, 245, 245));
@@ -159,8 +146,13 @@ private JPanel contentJPanel;
 		JButton onlineSingerButton = new JButton("歌手");
 		onlineSingerButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				frame.getContentPane().setVisible(false);
-				frame.setContentPane(new OnlineSingerIndex(id, frame).getContentJPanel());
+				if (id!=0){
+					frame.getContentPane().setVisible(false);
+					frame.setContentPane(new OnlineSingerIndex(id, frame).getContentJPanel());
+				}
+				else{
+					mentionLabel.setText("请先登录");
+				}
 			}
 		});
 		onlineSingerButton.setForeground(new Color(105, 105, 105));
@@ -173,6 +165,17 @@ private JPanel contentJPanel;
 		onlinePanel.add(onlineSingerButton);
 		
 		JButton onlineSongButton = new JButton("歌曲");
+		onlineSongButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (id!=0){
+					frame.getContentPane().setVisible(false);
+					frame.setContentPane(new OnlineSongIndex(id, frame).getContentJPanel());
+				}
+				else{
+					mentionLabel.setText("请先登录");
+				}
+			}
+		});
 		onlineSongButton.setHorizontalAlignment(SwingConstants.LEFT);
 		onlineSongButton.setForeground(new Color(105, 105, 105));
 		onlineSongButton.setBorderPainted(false);
@@ -215,6 +218,12 @@ private JPanel contentJPanel;
 		offlinePanel.add(offlineSingerButton);
 		
 		JButton offlineSongButton = new JButton("歌曲");
+		offlineSongButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new OfflineSongIndex(id, frame).getContentJPanel());
+			}
+		});
 		offlineSongButton.setForeground(new Color(105, 105, 105));
 		offlineSongButton.setHorizontalAlignment(SwingConstants.LEFT);
 		offlineSongButton.setPreferredSize(new Dimension(160, 30));
@@ -576,7 +585,7 @@ private JPanel contentJPanel;
 			}
 		});
 		
-		final JLabel mentionLabel = new JLabel();
+
 		mentionLabel.setForeground(Color.RED);
 		mentionLabel.setPreferredSize(new Dimension(300, 40));
 		mentionLabel.setHorizontalTextPosition(SwingConstants.RIGHT);

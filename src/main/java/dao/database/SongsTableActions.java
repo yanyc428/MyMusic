@@ -2,6 +2,7 @@ package dao.database;
 
 import enumItem.Area;
 import enumItem.Letter;
+import enumItem.Platform;
 import enumItem.Singers;
 import enumItem.Table;
 import utils.Log;
@@ -10,6 +11,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class SongsTableActions {
@@ -61,133 +63,78 @@ public class SongsTableActions {
         }
     }
 
-    public static void songUpdate(Integer id){
+    
+    public static ArrayList<HashMap<String, String>> selectOffline(String word){
+        ArrayList<HashMap<String, String>> mapList = new ArrayList<HashMap<String, String>>();
+        ResultSet set;
+
         try {
-            DbDML.executeNoneReturnSqlScript(connection,
-                    "UPDATE songs " +
-                            " SET update_time =  datetime('now', 'localtime')" +
-                            "WHERE id = " + id);
+            set = DbDML.executeReturnSqlScript(connection,
+                    "SELECT id, name, url, singer_id, album, album_url  FROM SONGS " +
+                            "WHERE name like '%" + word + "%' " +
+                            " OR album like  '%" + word + "%'; ");
+
+            while(set.next()){
+                HashMap<String, String> map = new HashMap<String, String>();
+                HashMap<String, String> singerMap = SingersTableActions.singerSelectUrlNameById(set.getInt("singer_id"));
+                map.put("id", set.getString("id"));
+                map.put("songName", set.getString("name"));
+                map.put("songUrl", set.getString("url"));
+                map.put("singerName", singerMap.get("name"));
+                map.put("singerUrl", singerMap.get("url"));
+                map.put("albumName", set.getString("album"));
+                map.put("albumUrl", set.getString("album_url"));
+                mapList.add(map);
+            }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
+        return mapList;
     }
-//
-//    public static List<String> singerSelectName(Singers column, Integer param){
-//        Db db = new Db();
-//        Connection connection = db.openDatabase();
-//        ResultSet set = null;
-//
-//        switch (column.ordinal()){
-//            case 0:
-//                set = DbDML.executeReturnSqlScript(connection,
-//                        "SELECT  name"+
-//                                "FROM singers " +
-//                                "WHERE id = " + param);
-//                break;
-//            case 2:
-//                set = DbDML.executeReturnSqlScript(connection,
-//                        "SELECT  name"+
-//                                "FROM singers " +
-//                                "WHERE type = " + param);
-//                break;
-//        }
-//
-//        List<String> list = new ArrayList<String>();
-//        try {
-//            while (set.next()){
-//                list.add(set.getString("name"));
-//            }
-//            return list;
-//        }
-//        catch (Exception e){
-//            e.printStackTrace();
-//        }
-//
-//        db.closeDatabase(connection);
-//        return null;
-//    }
-//
-//    public static List<String> singerSelectName(Singers column, String param){
-//        Db db = new Db();
-//        Connection connection = db.openDatabase();
-//        ResultSet set = null;
-//
-//        switch (column.ordinal()){
-//            case 1:
-//                set = DbDML.executeReturnSqlScript(connection,
-//                        "SELECT  name"+
-//                                "FROM singers " +
-//                                "WHERE name = " + param);
-//                break;
-//            case 3:
-//                set = DbDML.executeReturnSqlScript(connection,
-//                        "SELECT  name"+
-//                                "FROM singers " +
-//                                "WHERE letter = " + param);
-//                break;
-//            case 4:
-//                set = DbDML.executeReturnSqlScript(connection,
-//                        "SELECT  name"+
-//                                "FROM singers " +
-//                                "WHERE url = " + param);
-//                break;
-//        }
-//
-//        List<String> list = new ArrayList<String>();
-//        try {
-//            while (set.next()){
-//                list.add(set.getString("name"));
-//            }
-//            return list;
-//        }
-//        catch (Exception e){
-//            e.printStackTrace();
-//        }
-//
-//        db.closeDatabase(connection);
-//        return null;
-//    }
-//
-//    public static List<String> singerSelectArea(Singers column, String param){
-//        Db db = new Db();
-//        Connection connection = db.openDatabase();
-//        ResultSet set = null;
-//
-//        switch (column.ordinal()){
-//            case 1:
-//                set = DbDML.executeReturnSqlScript(connection,
-//                        "SELECT  name"+
-//                                "FROM singers " +
-//                                "WHERE name = " + param);
-//                break;
-//            case 3:
-//                set = DbDML.executeReturnSqlScript(connection,
-//                        "SELECT  name"+
-//                                "FROM singers " +
-//                                "WHERE letter = " + param);
-//                break;
-//            case 4:
-//                set = DbDML.executeReturnSqlScript(connection,
-//                        "SELECT  name"+
-//                                "FROM singers " +
-//                                "WHERE url = " + param);
-//                break;
-//        }
-//
-//        List<String> list = new ArrayList<String>();
-//        try {
-//            while (set.next()){
-//                list.add(set.getString("name"));
-//            }
-//            return list;
-//        }
-//        catch (Exception e){
-//            e.printStackTrace();
-//        }
-//
-//        db.closeDatabase(connection);
-//        return null;
-//    }
+
+    public static int getIdByNameURLAlbumURL(String songName, String songUrl, String albumURL){
+        ResultSet set;
+        try {
+            set = DbDML.executeReturnSqlScript(connection,
+                    "SELECT id  FROM SONGS " +
+                            "WHERE name = " + "'" + songName + "' and " +
+                            "url = '" + songUrl + "' and "  +
+                            "album_url = '" + albumURL + "';");
+            if (set.next()){
+                return set.getInt("id");
+            }else{
+                return 0;
+            }
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return 0;
+    }
+
+    public static HashMap<String, String> selectNameUrlAlbumById(int id){
+        ResultSet set;
+        HashMap<String, String> map = new HashMap<String, String>();
+        try {
+            set = DbDML.executeReturnSqlScript(connection,
+                    "SELECT id, name, url, singer_id, album, album_url  FROM SONGS " +
+                            "WHERE id = " + id+";");
+            if (set.next()){
+                HashMap<String, String> singerMap = SingersTableActions.singerSelectUrlNameById(set.getInt("singer_id"));
+                map.put("id", set.getInt("id")+"");
+                map.put("songName", set.getString("name"));
+                map.put("songUrl", set.getString("url"));
+                map.put("album", set.getString("album"));
+                map.put("albumUrl", set.getString("album_url"));
+                map.put("singerName", singerMap.get("name"));
+                map.put("singerUrl", singerMap.get("url"));
+            }
+            return map;
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return map;
+    }
 
 }

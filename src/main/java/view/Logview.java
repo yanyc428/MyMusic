@@ -94,6 +94,12 @@ public class Logview {
 		mymusicPanel.add(mymusicLabel);
 		
 		JButton mymusicLoveButton = new JButton("我喜欢");
+		mymusicLoveButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.getContentPane().setVisible(false);
+				frame.setContentPane(new LoveView(id, frame).getContentJPanel());
+			}
+		});
 		mymusicLoveButton.setBorderPainted(false);
 		mymusicLoveButton.setBackground(new Color(245, 245, 245));
 		mymusicLoveButton.setForeground(new Color(105, 105, 105));
@@ -103,26 +109,8 @@ public class Logview {
 		mymusicLoveButton.setPreferredSize(new Dimension(160, 30));
 		mymusicLoveButton.setIcon(new ImageIcon(dir + "love.png"));
 		mymusicPanel.add(mymusicLoveButton);
-		
-		JButton mymusicListButton = new JButton("我的歌单");
-		mymusicListButton.setForeground(new Color(105, 105, 105));
-		mymusicListButton.setHorizontalAlignment(SwingConstants.LEFT);
-		mymusicListButton.setBorderPainted(false);
-		mymusicListButton.setPreferredSize(new Dimension(160, 30));
-		mymusicListButton.setMinimumSize(new Dimension(160, 30));
-		mymusicListButton.setMaximumSize(new Dimension(160, 30));
-		mymusicListButton.setIcon(new ImageIcon(dir + "list.png"));
-		mymusicPanel.add(mymusicListButton);
-		
-		JButton mymusicHistoryButton = new JButton("检索历史");
-		mymusicHistoryButton.setForeground(new Color(105, 105, 105));
-		mymusicHistoryButton.setHorizontalAlignment(SwingConstants.LEFT);
-		mymusicHistoryButton.setBorderPainted(false);
-		mymusicHistoryButton.setMaximumSize(new Dimension(160, 30));
-		mymusicHistoryButton.setMinimumSize(new Dimension(160, 30));
-		mymusicHistoryButton.setPreferredSize(new Dimension(160, 30));
-		mymusicHistoryButton.setIcon(new ImageIcon(dir + "history.png"));
-		mymusicPanel.add(mymusicHistoryButton);
+
+
 		
 		JPanel onlinePanel = new JPanel();
 		onlinePanel.setBackground(new Color(245, 245, 245));
@@ -158,6 +146,7 @@ public class Logview {
 		onlinePanel.add(onlineSingerButton);
 		
 		JButton onlineSongButton = new JButton("歌曲");
+
 		onlineSongButton.setHorizontalAlignment(SwingConstants.LEFT);
 		onlineSongButton.setForeground(new Color(105, 105, 105));
 		onlineSongButton.setBorderPainted(false);

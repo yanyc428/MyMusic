@@ -10,36 +10,33 @@ import java.sql.SQLException;
 
 public class UsersTableActions {
 
+    private  static Connection connection = Db.openDatabase();
+
+    @Override
+    protected void finalize() {
+        Db.closeDatabase(connection);
+    }
+
     public static void usersCreate(){
-        Db db = new Db();
-        Connection connection = db.openDatabase();
         DbDDL.tableCreate(connection, Table.users);
-        db.closeDatabase(connection);
     }
 
     public static void usersDrop(){
-        Db db = new Db();
-        Connection connection = db.openDatabase();
         DbDDL.tableDelete(connection, Table.users);
-        db.closeDatabase(connection);
     }
 
-    public static int checkUser(String userName, String eMail, String password){
-        Db db = new Db();
-        Connection connection = db.openDatabase();
+    public static int getIdByUsernamePassword(String userName, String password){
         int id = 0;
         ResultSet set = null;
-
         try {
             set = DbDML.executeReturnSqlScript(connection,
                     "SELECT  password, id "+
                             "FROM users " +
                             "WHERE user_name = " + "'" + userName + "';");
             while (set.next()){
-                if (MD5Utils.code(password).equals(set.getString("password"))){
+                if (password.equals(set.getString("password"))){
                     id = set.getInt("id");
                     set.close();
-                    db.closeDatabase(connection);
                     return id;
                 }
             }
@@ -48,18 +45,20 @@ public class UsersTableActions {
         catch (Exception e){
             e.printStackTrace();
         }
-
+        return id;
+    }
+    public static int getIdByEmailPassword(String eMail, String password){
+        int id = 0;
+        ResultSet set = null;
         try {
-
             set = DbDML.executeReturnSqlScript(connection,
                     "SELECT  password, id "+
                             "FROM users " +
                             "WHERE e_mail = " +  "'" + eMail + "';");
             while (set.next()){
-                if (MD5Utils.code(password).equals(set.getString("password"))){
+                if (password.equals(set.getString("password"))){
                     id = set.getInt("id");
                     set.close();
-                    db.closeDatabase(connection);
                     return id;
                 }
             }
@@ -68,10 +67,9 @@ public class UsersTableActions {
         catch (Exception e){
             e.printStackTrace();
         }
-
-        db.closeDatabase(connection);
         return id;
     }
+
 
     public static void addUser(String userName, String eMail, String password, Integer gender, String avatar){
         Db db = new Db();
