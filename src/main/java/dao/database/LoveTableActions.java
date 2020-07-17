@@ -1,7 +1,5 @@
 package dao.database;
 
-import enumItem.Area;
-import enumItem.Letter;
 import enumItem.Table;
 import utils.Log;
 

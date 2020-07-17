@@ -19,7 +19,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import service.spider.SingerSpider;
-import sun.jvm.hotspot.compiler.OopMapStream;
 import utils.Log;
 import utils.Logger;
 

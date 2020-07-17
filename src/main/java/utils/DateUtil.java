@@ -3,7 +3,6 @@ package utils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.mail.internet.NewsAddress;
 
 public class DateUtil {
     private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式

@@ -7,7 +7,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -341,12 +340,4 @@ public class SingersTableActions {
         return mapList;
     }
 
-    public static void main(String[] args) {
-        ArrayList<HashMap<String, String>> mapList = new ArrayList<HashMap<String, String>>();
-        mapList = selectOffline(Area.CHN_G, Letter.A, Platform.WangYiYunMusic);
-        for (HashMap<String, String> item :
-                mapList) {
-            System.out.println(item);
-        }
-    }
 }

@@ -1,9 +1,5 @@
 package dao.database;
 
-import enumItem.Area;
-import enumItem.Letter;
-import enumItem.Platform;
-import enumItem.Singers;
 import enumItem.Table;
 import utils.Log;
 
@@ -12,7 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class SongsTableActions {
 

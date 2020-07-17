@@ -1,17 +1,11 @@
 package service.spider.kugoumusic;
 
-import dao.database.SingersTableActions;
 import dao.database.SongsTableActions;
-import enumItem.Area;
-import enumItem.Browser;
-import enumItem.Letter;
-import model.Song;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import service.OpenWebDriver;
 import service.spider.SongSpider;
 import utils.Log;
 

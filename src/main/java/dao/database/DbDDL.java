@@ -4,9 +4,7 @@ import enumItem.Table;
 import utils.Log;
 
 import java.sql.Connection;
-import java.sql.Statement;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class DbDDL {
 
