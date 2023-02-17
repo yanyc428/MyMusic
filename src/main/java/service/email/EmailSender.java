@@ -17,7 +17,7 @@ public class EmailSender {
 
 	public static String headString = "mymusic音乐 - 热爱你的音乐\n";
 	private static String sendBoxString = "mymusic_admin@163.com";
-	private static String passwordString = "JJBSMQQDYWYEIZXN";
+	private static String passwordString = "passwordstr";
 	private static String hostString = "smtp.163.com";
 
     /**
